@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222222; /* Fondo gris oscuro */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease;
+  animation: fade-in 0.5s ease-in-out; /* Agregamos animación de fade-in */
+  color: #ffffff; /* Texto blanco */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* Estilos para el encabezado */
+header {
+  background-color: #2B2B2B; /* Gris más oscuro */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 20px; /* Ajustamos el tamaño de las líneas del menú */
+  height: 2px; /* Ajustamos la altura de las líneas del menú */
+  background-color: #ffffff; /* Blanco */
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  font-size: large;
+  text-decoration: none;
+  color: #ffffff; /* Texto blanco */
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: #1976D2; /* Azul */
+}
+
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  color: #fff;
+}
+
+.config-button {
+  position: fixed;
+  /* Cambiado a fixed para que sea fijo en la ventana */
+  top: 150px;
+  /* Ajusta la distancia desde la parte superior */
+  left: 20px;
+  /* Ajusta la distancia desde el borde izquierdo */
+  width: 44px;
+  /* Ancho del botón */
+  height: 44px;
+  /* Alto del botón */
+  transition: color 0.3s ease;
+  z-index: 1100;
+  /* Asegura que esté por encima de otros elementos */
+}
+
+.config-button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+}
+
+.config-button svg {
+  stroke: #ffffff; /* Texto blanco */
+}
+
+.profile-card {
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+  margin: 50px auto;
+  background-image: url("fondo-dark.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #222222; 
+}
+
+.barcode-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Estilo para el código de barras Code 128 */
+#barcodeSVG {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.context-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 0;
+  z-index: 100;
+}
+
+.context-menu a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.context-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .config-button {
+    position: fixed;
+    /* Cambiado a fixed para que sea fijo en la ventana */
+    top: 80px;
+    /* Ajusta la distancia desde la parte superior */
+    left: 20px;
+    /* Ajusta la distancia desde el borde izquierdo */
+    width: 44px;
+    /* Ancho del botón */
+    height: 44px;
+    /* Alto del botón */
+    transition: color 0.3s ease;
+    z-index: 100;
+    /* Asegura que esté por encima de otros elementos */
+  }
+
+  .profile-card {
+    margin: 30px auto;
+    /* Reducir el margen en dispositivos móviles */
+  }
+
+  .profile-card img {
+    width: 120px;
+    /* Reducir el tamaño de la foto del usuario en dispositivos móviles */
+    height: 120px;
+    /* Reducir el tamaño de la foto del usuario en dispositivos móviles */
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-left: auto;
+    /* Alinea el botón de menú al final de la derecha */
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-left: auto; /* Alinea el botón de menú al final de la derecha */
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #2B2B2B;
+    position: absolute;
+    top: 70px; /* Ajustamos la posición de la barra de navegación */
+    right: 0;
+    width: 100%;
+    padding: 20px; /* Aumentar el padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slide-down 0.3s ease; /* Agregamos animación de slide-down */
+  }
+
+  .nav-list.active {
+    display: flex;
+    justify-content: center; /* Centramos la barra de navegación */
+    align-items: center;
+    z-index: 100;
+  }
+
+  .line {
+    width: 25px; /* Ajustamos el tamaño de las líneas del menú */
+    height: 2px; /* Ajustamos la altura de las líneas del menú */
+    background-color: #ffffff; /* Blanco */
+    margin: 4px; /* Reducimos el margen entre las líneas */
+    transition: transform 0.3s ease;
+  }
+}

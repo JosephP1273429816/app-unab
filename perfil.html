@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="css/styles_perfil.css" as="style" />
+  <link rel="preload" href="css/styles_perfil-dark.css" as="style" />
+  <link rel="stylesheet" href="css/styles_perfil.css" id="mapa-css">
+  <title>Perfil - Universidad UNAB</title>
+</head>
+<body class="home">
+  <header>
+    <a href="inicio.html" class="logo">
+      <img
+        src="https://unab.edu.co/wp-content/uploads/2023/09/logo-universidad-unab.png"
+        alt="Logo Universidad UNAB" id="logo-img" />
+    </a>
+    <div class="menu-toggle">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a class="active" href="perfil.html">Perfil</a></li>
+        <li><a href="bus.html">Bus</a></li>
+        <li><a href="configuraciones.html">Ajustes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <a class="config-button" href="#" onclick="toggleContextMenu(event)">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="44" height="44"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path
+        d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+    </svg>
+  </a>
+  <div id="contextMenu" class="context-menu" onclick="closeMenu()">
+    <a href="#">Servicios</a>
+  </div>
+  <div class="content">
+    <div class="profile-card" id="profileCard" onclick="flipCard()">
+      <div class="card-front">
+        <img src="img/foto_usuario.svg" alt="Foto de Usuario" id="userPhoto" />
+        <h2 id="studentName">Nombre Completo</h2>
+        <p>ID de Estudiante: <span id="studentId"></span></p>
+        <p>Carrera: <span id="studentCarr"></span></p>
+        <svg id="barcodeSVG"></svg>
+      </div>
+      <div class="card-back" style="display: none">
+        <h2>Proximamente</h2>
+        <p>:D</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+  <script src="js/perfil.js"></script>
+  <script>
+    // Obtener el estado del modo oscuro del localStorage
+    const modoOscuro = localStorage.getItem('darkMode');
+
+    // Función para cambiar al modo oscuro
+    function activarModoOscuro() {
+      document.body.classList.add('dark-mode');
+      const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
+      if (link) {
+        link.href = 'css/styles_perfil-dark.css'; // Establecer el enlace al modo oscuro
+      }
+      localStorage.setItem('darkMode', 'true'); // Guardar el estado del modo oscuro
+      const logoImg = document.getElementById('logo-img');
+      if (logoImg) {
+        logoImg.src = 'img/logo-white.png'; // Ruta de la imagen en modo oscuro
+      }
+    }
+
+    // Función para cambiar al modo claro
+    function activarModoClaro() {
+      document.body.classList.remove('dark-mode');
+      const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
+      if (link) {
+        link.href = 'css/styles_perfil.css'; // Establecer el enlace al modo claro
+      }
+      localStorage.setItem('darkMode', 'false'); // Guardar el estado del modo claro
+    }
+
+    // Cambiar al modo oscuro si está activado en el localStorage
+    if (modoOscuro === 'true') {
+      activarModoOscuro();
+    } else {
+      activarModoClaro();
+    }
+  </script>
+</body>
+
+</html>

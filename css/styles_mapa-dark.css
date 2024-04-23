@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222222; /* Fondo gris oscuro */
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease;
+  animation: fade-in 0.5s ease-in-out; /* Agregamos animación de fade-in */
+  color: #ffffff; /* Texto blanco */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #2B2B2B; /* Gris más oscuro */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 20px; /* Ajustamos el tamaño de las líneas del menú */
+  height: 2px; /* Ajustamos la altura de las líneas del menú */
+  background-color: #ffffff; /* Blanco */
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  font-size: large;
+  text-decoration: none;
+  color: #ffffff; /* Texto blanco */
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: #1976D2; /* Azul */
+}
+
+#map {
+  height: calc(100vh - 60px); /* 100% del viewport menos la altura de la barra de navegación */
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-left: auto; /* Alinea el botón de menú al final de la derecha */
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #2B2B2B; /* Fondo sólido sin transparencia */
+    position: absolute;
+    top: 70px; /* Ajustamos la posición de la barra de navegación */
+    right: 0;
+    width: 100%;
+    padding: 20px; /* Aumentar el padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slide-down 0.3s ease; /* Agregamos animación de slide-down */
+  }
+
+  .nav-list.active {
+    display: flex;
+    justify-content: center; /* Centramos la barra de navegación */
+    align-items: center;
+    z-index: 100;
+  }
+
+  .line {
+    width: 25px; /* Ajustamos el tamaño de las líneas del menú */
+    height: 2px; /* Ajustamos la altura de las líneas del menú */
+    background-color: #ffffff; /* Blanco */
+    margin: 4px; /* Reducimos el margen entre las líneas */
+    transition: transform 0.3s ease;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
