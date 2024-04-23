@@ -121,6 +121,14 @@ button#guardar-cambios {
 button#guardar-cambios:hover {
   background-color: #ca7900; /* Azul más oscuro al pasar el ratón */
 }
+button#contraseñan:hover {
+  background-color: #bd2130; /* Rojo más oscuro */
+}
+
+button#contraseña {
+  background-color: #dc3545; /* Color rojo */
+  color: #fff;
+}
 
 /* Estilos para el botón de cerrar sesión */
 button#cerrar-sesion {

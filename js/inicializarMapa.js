@@ -340,9 +340,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cambiar al modo oscuro si está activado en el localStorage
   if (modoOscuro === 'true') {
     activarModoOscuro();
-    // Refrescar la página actual
-window.location.reload();
-
   } else {
     activarModoClaro();
   }
@@ -356,5 +353,8 @@ window.location.reload();
     } else {
       activarModoOscuro();
     }
+    window.location.reload(); // Refresh the page after toggling mode
   });
+
+
 });
