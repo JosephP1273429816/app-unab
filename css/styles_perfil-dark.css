@@ -120,7 +120,9 @@ nav {
   opacity: 0;
   color: #fff;
 }
-
+h2{
+  font-size: 21px;
+}
 .config-button {
   position: fixed;
   /* Cambiado a fixed para que sea fijo en la ventana */
