@@ -11,174 +11,174 @@ document.addEventListener("DOMContentLoaded", function () {
   let marker1, marker2;
 
   function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 7.1165, lng: -73.10543 },
       zoom: 15,
-      mapTypeId: 'roadmap',
+      mapTypeId: "roadmap",
       disableDefaultUI: true,
     });
 
     // Define los estilos de mapa oscuro
     darkMapStyles = [
       {
-        "elementType": "geometry",
-        "stylers": [
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#242f3e"
-          }
-        ]
+            color: "#242f3e",
+          },
+        ],
       },
       {
-        "elementType": "labels.text.fill",
-        "stylers": [
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#746855"
-          }
-        ]
+            color: "#746855",
+          },
+        ],
       },
       {
-        "elementType": "labels.text.stroke",
-        "stylers": [
+        elementType: "labels.text.stroke",
+        stylers: [
           {
-            "color": "#242f3e"
-          }
-        ]
+            color: "#242f3e",
+          },
+        ],
       },
       {
-        "featureType": "administrative.locality",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#d59563"
-          }
-        ]
+            color: "#d59563",
+          },
+        ],
       },
       {
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#d59563"
-          }
-        ]
+            color: "#d59563",
+          },
+        ],
       },
       {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#263c3f"
-          }
-        ]
+            color: "#263c3f",
+          },
+        ],
       },
       {
-        "featureType": "poi.park",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#6b9a76"
-          }
-        ]
+            color: "#6b9a76",
+          },
+        ],
       },
       {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#38414e"
-          }
-        ]
+            color: "#38414e",
+          },
+        ],
       },
       {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
-        "stylers": [
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [
           {
-            "color": "#212a37"
-          }
-        ]
+            color: "#212a37",
+          },
+        ],
       },
       {
-        "featureType": "road",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#9ca5b3"
-          }
-        ]
+            color: "#9ca5b3",
+          },
+        ],
       },
       {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#746855"
-          }
-        ]
+            color: "#746855",
+          },
+        ],
       },
       {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [
           {
-            "color": "#1f2835"
-          }
-        ]
+            color: "#1f2835",
+          },
+        ],
       },
       {
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#f3d19c"
-          }
-        ]
+            color: "#f3d19c",
+          },
+        ],
       },
       {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#2f3948"
-          }
-        ]
+            color: "#2f3948",
+          },
+        ],
       },
       {
-        "featureType": "transit.station",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#d59563"
-          }
-        ]
+            color: "#d59563",
+          },
+        ],
       },
       {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [
           {
-            "color": "#17263c"
-          }
-        ]
+            color: "#17263c",
+          },
+        ],
       },
       {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [
           {
-            "color": "#515c6d"
-          }
-        ]
+            color: "#515c6d",
+          },
+        ],
       },
       {
-        "featureType": "water",
-        "elementType": "labels.text.stroke",
-        "stylers": [
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [
           {
-            "color": "#17263c"
-          }
-        ]
-      }
+            color: "#17263c",
+          },
+        ],
+      },
     ];
 
     // Aplica los estilos al mapa según el modo actual
@@ -189,22 +189,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function applyMapStyle() {
-    if (localStorage.getItem('darkMode') === 'true') {
+    if (localStorage.getItem("darkMode") === "true" && !map.get("styles")) {
       map.setOptions({ styles: darkMapStyles });
-    } else {
-      map.setOptions({ styles: [] }); // Estilos por defecto (modo claro)
     }
   }
-
   function createMarkers() {
     marker1 = new google.maps.Marker({
       position: { lat: 7.1165, lng: -73.10543 },
       map: map,
-      title: 'Ruta 1',
+      title: "Ruta 1",
       draggable: false,
       icon: {
-        url: 'img/bus_1.png',
-        scaledSize: new google.maps.Size(50, 75)
+        url: "img/bus_1.png",
+        scaledSize: new google.maps.Size(50, 75),
       },
       clickable: false,
     });
@@ -212,11 +209,11 @@ document.addEventListener("DOMContentLoaded", function () {
     marker2 = new google.maps.Marker({
       position: { lat: 7.1165, lng: -73.10543 },
       map: map,
-      title: 'Ruta 2',
+      title: "Ruta 2",
       draggable: false,
       icon: {
-        url: 'img/bus_2.png',
-        scaledSize: new google.maps.Size(50, 75)
+        url: "img/bus_2.png",
+        scaledSize: new google.maps.Size(50, 75),
       },
       clickable: false,
     });
@@ -224,15 +221,15 @@ document.addEventListener("DOMContentLoaded", function () {
       function (position) {
         const userLocation = {
           lat: position.coords.latitude,
-          lng: position.coords.longitude
+          lng: position.coords.longitude,
         };
 
         new google.maps.Marker({
           position: userLocation,
           map: map,
           icon: {
-            url: 'img/usuario.png',
-            scaledSize: new google.maps.Size(30, 30)
+            url: "img/usuario.png",
+            scaledSize: new google.maps.Size(30, 30),
           },
           clickable: false,
         });
@@ -247,7 +244,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Lógica para cargar y actualizar las posiciones de los marcadores de las rutas
     function cargarRespuesta() {
       const xhr1 = new XMLHttpRequest();
-      const url1 = "https://api.allorigins.win/get?url=http%3A//gpsmobile.co%3A4000/api/DetalleVehiculo/97141/96365";
+      const url1 =
+        "https://api.allorigins.win/get?url=http%3A//gpsmobile.co%3A4000/api/DetalleVehiculo/97141/96365";
       xhr1.open("GET", url1, true);
 
       xhr1.onreadystatechange = function () {
@@ -265,7 +263,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Longitud Ruta 1:", longitud1);
             console.log("Latitud Ruta 1:", latitud1);
           } else {
-            console.error("La estructura de datos recibida para Ruta 1 no es válida.");
+            console.error(
+              "La estructura de datos recibida para Ruta 1 no es válida."
+            );
           }
         }
       };
@@ -273,7 +273,8 @@ document.addEventListener("DOMContentLoaded", function () {
       xhr1.send();
 
       const xhr2 = new XMLHttpRequest();
-      const url2 = "https://api.allorigins.win/get?url=http%3A//gpsmobile.co%3A4000/api/DetalleVehiculo/97149/96365";
+      const url2 =
+        "https://api.allorigins.win/get?url=http%3A//gpsmobile.co%3A4000/api/DetalleVehiculo/97149/96365";
       xhr2.open("GET", url2, true);
 
       xhr2.onreadystatechange = function () {
@@ -291,7 +292,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Longitud Ruta 2:", longitud2);
             console.log("Latitud Ruta 2:", latitud2);
           } else {
-            console.error("La estructura de datos recibida para Ruta 2 no es válida.");
+            console.error(
+              "La estructura de datos recibida para Ruta 2 no es válida."
+            );
           }
         }
       };
@@ -305,40 +308,39 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(cargarRespuesta, 5000); // Actualizar cada 5 segundos
   }
 
-  // Llamar a la función de inicialización del mapa al cargar la página
   initMap();
 
   // Obtener el estado del modo oscuro del localStorage
-  const modoOscuro = localStorage.getItem('darkMode');
+  const modoOscuro = localStorage.getItem("darkMode");
 
   // Función para cambiar al modo oscuro
   function activarModoOscuro() {
-    document.body.classList.add('dark-mode');
-    const link = document.querySelector('link#mapa-css');
+    document.body.classList.add("dark-mode");
+    const link = document.querySelector("link#mapa-css");
     if (link) {
-      link.href = 'css/styles_mapa-dark.css';
+      link.href = "css/styles_mapa-dark.css";
     }
     map.setOptions({ styles: darkMapStyles }); // Cambiar al estilo de mapa oscuro
-    localStorage.setItem('darkMode', 'true');
-    const logoImg = document.getElementById('logo-img');
+    localStorage.setItem("darkMode", "true");
+    const logoImg = document.getElementById("logo-img");
     if (logoImg) {
-      logoImg.src = 'img/logo-white.png';
+      logoImg.src = "img/logo-white.png";
     }
   }
 
   // Función para cambiar al modo claro
   function activarModoClaro() {
-    document.body.classList.remove('dark-mode');
-    const link = document.querySelector('link#mapa-css');
+    document.body.classList.remove("dark-mode");
+    const link = document.querySelector("link#mapa-css");
     if (link) {
-      link.href = 'css/styles_mapa.css';
+      link.href = "css/styles_mapa.css";
     }
     map.setOptions({ styles: [] }); // Restablecer al estilo de mapa por defecto
-    localStorage.setItem('darkMode', 'false');
+    localStorage.setItem("darkMode", "false");
   }
 
   // Cambiar al modo oscuro si está activado en el localStorage
-  if (modoOscuro === 'true') {
+  if (modoOscuro === "true") {
     activarModoOscuro();
   } else {
     activarModoClaro();
@@ -348,13 +350,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
   darkModeToggle.addEventListener("click", function () {
-    if (modoOscuro === 'true') {
+    if (modoOscuro === "true") {
       activarModoClaro();
     } else {
       activarModoOscuro();
     }
     window.location.reload(); // Refresh the page after toggling mode
   });
-
-
 });

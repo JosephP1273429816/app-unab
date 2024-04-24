@@ -1,208 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Universidad UNAB</title>
+    <link rel="preload" href="css/registro-dark.css" as="style" />
+    <link rel="preload" href="css/registro.css" as="style" />
+    <link rel="stylesheet" href="css/registro.css" id="mapa-css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro - Universidad UNAB</title>
-  <link rel="preload" href="css/registro-dark.css" as="style" />
-  <link rel="preload" href="css/registro.css" as="style" />
-  <link rel="stylesheet" href="css/registro.css" id="mapa-css" />
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <a href="index.html" class="logo">
-        <img src="img/logo.png" alt="Logo Universidad UNAB" id="logo-img" />
-      </a>
-    </header>
-    <main>
-      <div class="register-form active">
-        <h2>Crear usuario</h2>
-        <form id="registerForm">
-          <div class="form-group">
-            <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required />
-          </div>
-          <div class="form-group">
-            <label for="id"></label>
-            <input type="text" id="id" name="id" placeholder="Ingrese su id (U00000000)" required />
-          </div>
-          <div class="form-group">
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required />
-          </div>
-          <div class="form-group">
-            <label for="password"></label>
-            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required />
-          </div>
-          <div class="form-group">
-            <label for="confirmPassword"></label>
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña"
-              required />
-          </div>
-          <div class="form-group">
-            <label for="carrera"></label>
-            <select id="carrera" name="carrera" required>
-              <option value="" disabled selected>Seleccione su carrera</option>
-              <optgroup label="Facultad de Estudios Técnicos y Tecnológicos">
-                <option value="Tecnología en Dirección Comercial (virtual y presencial)">Tecnología en Dirección
-                  Comercial (virtual y presencial)</option>
-                <option value="Tecnología en Gestión Gastronómica (virtual dual)">Tecnología en Gestión Gastronómica
-                  (virtual dual)</option>
-                <option value="Tecnología en Gestión Humana (dual)">Tecnología en Gestión Humana (dual)</option>
-                <option value="Tecnología en Investigación Criminal y Ciencias Forenses">Tecnología en Investigación
-                  Criminal y Ciencias Forenses</option>
-                <option value="Tecnología en Logística y Mercadeo">Tecnología en Logística y Mercadeo</option>
-                <option value="Tecnología en Regencia de Farmacia (virtual)">Tecnología en Regencia de Farmacia
-                  (virtual)</option>
-                <option value="Tecnología en Seguridad y Salud en el Trabajo (virtual)">Tecnología en Seguridad y Salud
-                  en el Trabajo (virtual)</option>
-              </optgroup>
-              <optgroup label="Facultad de Ciencias Económicas, Administrativas y Contables">
-                <option value="Administración de Empresas modalidades presencial, virtual y dual">Administración de
-                  Empresas modalidades presencial, virtual y dual</option>
-                <option value="Contaduría Pública (virtual y dual)">Contaduría Pública (virtual y dual)</option>
-                <option value="Negocios Internacionales">Negocios Internacionales</option>
-                <option value="Administración Turística y Hotelera">Administración Turística y Hotelera</option>
-                <option value="Economía">Economía</option>
-                <option value="Seguridad y Salud en el Trabajo (virtual)">Seguridad y Salud en el Trabajo (virtual)
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="Logo Universidad UNAB" id="logo-img" />
+        </a>
+      </header>
+      <main>
+        <div class="register-form active">
+          <h2>Crear usuario</h2>
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="name"></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ingrese su nombre completo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="id"></label>
+              <input
+                type="text"
+                id="id"
+                name="id"
+                placeholder="Ingrese su id (U00000000)"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingrese su correo electrónico"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password"></label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Ingrese su contraseña"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword"></label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirme su contraseña"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="carrera"></label>
+              <select id="carrera" name="carrera" required>
+                <option value="" disabled selected>
+                  Seleccione su carrera
                 </option>
-              </optgroup>
-              <optgroup label="Facultad de Ciencias Jurídicas y Políticas">
-                <option value="Derecho">Derecho</option>
-              </optgroup>
-              <optgroup label="Facultad de Ingenierías">
-                <option value="Ingeniería en Energía">Ingeniería en Energía</option>
-                <option value="Ingeniería Mecatrónica">Ingeniería Mecatrónica</option>
-                <option value="Ingeniería de Mercados">Ingeniería de Mercados</option>
-                <option value="Ingeniería Financiera">Ingeniería Financiera</option>
-                <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
-                <option value="Ingeniería Industrial">Ingeniería Industrial</option>
-                <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
-              </optgroup>
-              <optgroup label="Facultad de Ciencias de la Salud">
-                <option value="Enfermería">Enfermería</option>
-                <option value="Medicina">Medicina</option>
-                <option value="Psicología">Psicología</option>
-              </optgroup>
-              <optgroup label="Facultad de Ciencias Sociales, Humanidades y Artes">
-                <option value="Artes Audiovisuales">Artes Audiovisuales</option>
-                <option value="Gastronomía y Alta Cocina">Gastronomía y Alta Cocina</option>
-                <option value="Música">Música</option>
-                <option value="Comunicación Social">Comunicación Social</option>
-                <option value="Licenciatura en Educación Infantil">Licenciatura en Educación Infantil</option>
-                <option value="Literatura (virtual)">Literatura (virtual)</option>
-              </optgroup>
-            </select>
-          </div>
-          <button type="submit" class="btn-orange">Registrarse</button>
-        </form>
-      </div>
-    </main>
-  </div>
-  <!-- Código JavaScript utilizando módulos ES6 -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyAUg3rSb49LaMSXyONB7wdjQRClog3lC5I",
-      authDomain: "unab-app-ea396.firebaseapp.com",
-      projectId: "unab-app-ea396",
-      storageBucket: "unab-app-ea396.appspot.com",
-      messagingSenderId: "883439198464",
-      appId: "1:883439198464:web:44c91c737efea0521093e5",
-      measurementId: "G-DJ2T3GY8E3"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth();
-    const db = getDatabase();
-
-    document.getElementById("registerForm").addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.toUpperCase();
-      const id = document.getElementById("id").value.toUpperCase();
-      const email = document.getElementById("email").value.trim().toLowerCase(); // Convertir a minúsculas y quitar espacios adicionales
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirmPassword").value;
-      const carrera = document.getElementById("carrera").value;
-
-      // Validar el correo electrónico
-      if (!email.endsWith("@unab.edu.co")) {
-        alert("El correo electrónico debe ser de dominio unab.edu.co.");
-        return;
-      }
-
-      if (password !== confirmPassword) {
-        alert("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
-        return;
-      }
-
-      try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        const user = userCredential.user;
-
-        await push(ref(db, "usuarios"), {
-          nombre: name,
-          id: id,
-          correo: email,
-          uid: user.uid,
-          carrera: carrera,
-        });
-
-        alert("Usuario registrado exitosamente!");
-        window.location.href = "inicio.html";
-      } catch (error) {
-        alert("Error al registrar usuario: " + error.message);
-      }
-    });
-  </script>
-  <script>
-    // Obtener el estado del modo oscuro del localStorage
-    const modoOscuro = localStorage.getItem('darkMode');
-
-    // Función para cambiar al modo oscuro
-    function activarModoOscuro() {
-      console.log('Activando modo oscuro...');
-      document.body.classList.add('dark-mode');
-      const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
-      if (link) {
-        link.href = 'css/registro-dark.css'; // Establecer el enlace al modo oscuro
-      }
-      localStorage.setItem('darkMode', 'true'); // Guardar el estado del modo oscuro
-      const logoImg = document.getElementById('logo-img');
-      if (logoImg) {
-        logoImg.src = 'img/logo-white.png'; // Ruta de la imagen en modo oscuro
-      }
-    }
-
-    // Función para cambiar al modo claro
-    function activarModoClaro() {
-      console.log('Activando modo claro...');
-      document.body.classList.remove('dark-mode');
-      const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
-      if (link) {
-        link.href = 'css/registro.css'; // Establecer el enlace al modo claro
-      }
-      localStorage.setItem('darkMode', 'false'); // Guardar el estado del modo claro
-    }
-
-    // Cambiar al modo oscuro si está activado en el localStorage
-    if (modoOscuro === 'true') {
-      console.log('Modo oscuro activado desde el localStorage.');
-      activarModoOscuro();
-    } else {
-      console.log('Modo claro activado desde el localStorage.');
-      activarModoClaro();
-    }
-
-  </script>
-
-</body>
-
+                <optgroup label="Facultad de Estudios Técnicos y Tecnológicos">
+                  <option
+                    value="Tecnología en Dirección Comercial (virtual y presencial)"
+                  >
+                    Tecnología en Dirección Comercial (virtual y presencial)
+                  </option>
+                  <option
+                    value="Tecnología en Gestión Gastronómica (virtual dual)"
+                  >
+                    Tecnología en Gestión Gastronómica (virtual dual)
+                  </option>
+                  <option value="Tecnología en Gestión Humana (dual)">
+                    Tecnología en Gestión Humana (dual)
+                  </option>
+                  <option
+                    value="Tecnología en Investigación Criminal y Ciencias Forenses"
+                  >
+                    Tecnología en Investigación Criminal y Ciencias Forenses
+                  </option>
+                  <option value="Tecnología en Logística y Mercadeo">
+                    Tecnología en Logística y Mercadeo
+                  </option>
+                  <option value="Tecnología en Regencia de Farmacia (virtual)">
+                    Tecnología en Regencia de Farmacia (virtual)
+                  </option>
+                  <option
+                    value="Tecnología en Seguridad y Salud en el Trabajo (virtual)"
+                  >
+                    Tecnología en Seguridad y Salud en el Trabajo (virtual)
+                  </option>
+                </optgroup>
+                <optgroup
+                  label="Facultad de Ciencias Económicas, Administrativas y Contables"
+                >
+                  <option
+                    value="Administración de Empresas modalidades presencial, virtual y dual"
+                  >
+                    Administración de Empresas modalidades presencial, virtual y
+                    dual
+                  </option>
+                  <option value="Contaduría Pública (virtual y dual)">
+                    Contaduría Pública (virtual y dual)
+                  </option>
+                  <option value="Negocios Internacionales">
+                    Negocios Internacionales
+                  </option>
+                  <option value="Administración Turística y Hotelera">
+                    Administración Turística y Hotelera
+                  </option>
+                  <option value="Economía">Economía</option>
+                  <option value="Seguridad y Salud en el Trabajo (virtual)">
+                    Seguridad y Salud en el Trabajo (virtual)
+                  </option>
+                </optgroup>
+                <optgroup label="Facultad de Ciencias Jurídicas y Políticas">
+                  <option value="Derecho">Derecho</option>
+                </optgroup>
+                <optgroup label="Facultad de Ingenierías">
+                  <option value="Ingeniería en Energía">
+                    Ingeniería en Energía
+                  </option>
+                  <option value="Ingeniería Mecatrónica">
+                    Ingeniería Mecatrónica
+                  </option>
+                  <option value="Ingeniería de Mercados">
+                    Ingeniería de Mercados
+                  </option>
+                  <option value="Ingeniería Financiera">
+                    Ingeniería Financiera
+                  </option>
+                  <option value="Ingeniería Biomédica">
+                    Ingeniería Biomédica
+                  </option>
+                  <option value="Ingeniería Industrial">
+                    Ingeniería Industrial
+                  </option>
+                  <option value="Ingeniería de Sistemas">
+                    Ingeniería de Sistemas
+                  </option>
+                </optgroup>
+                <optgroup label="Facultad de Ciencias de la Salud">
+                  <option value="Enfermería">Enfermería</option>
+                  <option value="Medicina">Medicina</option>
+                  <option value="Psicología">Psicología</option>
+                </optgroup>
+                <optgroup
+                  label="Facultad de Ciencias Sociales, Humanidades y Artes"
+                >
+                  <option value="Artes Audiovisuales">
+                    Artes Audiovisuales
+                  </option>
+                  <option value="Gastronomía y Alta Cocina">
+                    Gastronomía y Alta Cocina
+                  </option>
+                  <option value="Música">Música</option>
+                  <option value="Comunicación Social">
+                    Comunicación Social
+                  </option>
+                  <option value="Licenciatura en Educación Infantil">
+                    Licenciatura en Educación Infantil
+                  </option>
+                  <option value="Literatura (virtual)">
+                    Literatura (virtual)
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <button type="submit" class="btn-orange">Registrarse</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="js/registro.js"></script>
+  </body>
 </html>

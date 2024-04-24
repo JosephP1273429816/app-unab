@@ -1,146 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/styles-dark.css" as="style" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" id="mapa-css" />
+    <script src="js/styles.js"></script>
+    <title>Inicio - Universidad UNAB</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preload" href="css/styles-dark.css" as="style" />
-        <link rel="preload" href="css/styles.css" as="style" />
-        <link rel="stylesheet" href="css/styles.css" id="mapa-css">
-        <script src="js/styles.js"></script>
-        <title>Inicio - Universidad UNAB</title>
-    </head>
-
-    <body class="home">
-        <header>
-            <a href="inicio.html" class="logo">
-                <img
-                    src="https://unab.edu.co/wp-content/uploads/2023/09/logo-universidad-unab.png"
-                    alt="Logo Universidad UNAB" id="logo-img" />
-            </a>
-            <div class="menu-toggle">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a class="active" href="inicio.html">Inicio</a></li>
-                    <li><a href="perfil.html">Perfil</a></li>
-                    <li><a href="bus.html">Bus</a></li>
-                    <li><a href="configuraciones.html">Ajustes</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="posts-container">
-            <div class="post">
-                <div class="post-header">
-                    <img src="img/foto_usuario.svg" alt="Perfil 1">
-                    <h3>Usuario 1</h3>
-                </div>
-                <div class="post-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer nec odio. Praesent libero. Sed
-                        cursus ante dapibus diam.</p>
-                    <img src="#" alt="Imagen 1">
-                    <p>Morbi nec lacus. Donec vitae sapien ut libero venenatis
-                        faucibus. Nullam quis ante.</p>
-                </div>
-                <div class="post-footer">
-                    <button>Me gusta</button>
-                    <button>Comentar</button>
-                    <button>Compartir</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <img src="img/foto_usuario.svg" alt="Perfil 2">
-                    <h3>Usuario 2</h3>
-                </div>
-                <div class="post-content">
-                    <p>Ut lobortis, urna nec cursus pellentesque, eros elit
-                        dictum ipsum, a egestas mauris urna sed
-                        lectus.
-                        Aliquam vel eros vel neque vehicula condimentum nec in
-                        sapien.</p>
-                    <p>Vivamus sed justo eget augue feugiat ullamcorper nec sit
-                        amet metus.</p>
-                </div>
-                <div class="post-footer">
-                    <button>Me gusta</button>
-                    <button>Comentar</button>
-                    <button>Compartir</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <img src="img/foto_usuario.svg" alt="Perfil 3">
-                    <h3>Usuario 3</h3>
-                </div>
-                <div class="post-content">
-                    <p>Suspendisse et bibendum turpis. In hac habitasse platea
-                        dictumst. Fusce at felis sed odio
-                        efficitur
-                        placerat.</p>
-                    <img src="#" alt="Imagen 3">
-                </div>
-                <div class="post-footer">
-                    <button>Me gusta</button>
-                    <button>Comentar</button>
-                    <button>Compartir</button>
-                </div>
-            </div>
+  <body class="home">
+    <header>
+      <a href="inicio.html" class="logo">
+        <img
+          src="https://unab.edu.co/wp-content/uploads/2023/09/logo-universidad-unab.png"
+          alt="Logo Universidad UNAB"
+          id="logo-img"
+        />
+      </a>
+      <div class="menu-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="active" href="inicio.html">Inicio</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="bus.html">Bus</a></li>
+          <li><a href="configuraciones.html">Ajustes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="posts-container">
+      <div class="post">
+        <div class="post-header">
+          <img src="img/foto_usuario.svg" alt="Perfil 1" />
+          <h3>Usuario 1</h3>
         </div>
-        <script
-            src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-        <script
-            src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
-        <script
-            src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
-        <script src="js/fire.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navList = document.querySelector('.nav-list');
-
-            menuToggle.addEventListener('click', function () {
-                navList.classList.toggle('active');
-            });
-        });
-        // Obtener el estado del modo oscuro del localStorage
-        const modoOscuro = localStorage.getItem('darkMode');
-    
-        // Función para cambiar al modo oscuro
-        function activarModoOscuro() {
-          document.body.classList.add('dark-mode');
-          const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
-          if (link) {
-            link.href = 'css/styles-dark.css'; // Establecer el enlace al modo oscuro
-          }
-          localStorage.setItem('darkMode', 'true'); // Guardar el estado del modo oscuro
-          const logoImg = document.getElementById('logo-img');
-          if (logoImg) {
-            logoImg.src = 'img/logo-white.png'; // Ruta de la imagen en modo oscuro
-          }
-        }
-    
-        // Función para cambiar al modo claro
-        function activarModoClaro() {
-          document.body.classList.remove('dark-mode');
-          const link = document.querySelector('link#mapa-css'); // Seleccionar el enlace por su ID
-          if (link) {
-            link.href = 'css/styles.css'; // Establecer el enlace al modo claro
-          }
-          localStorage.setItem('darkMode', 'false'); // Guardar el estado del modo claro
-        }
-    
-        // Cambiar al modo oscuro si está activado en el localStorage
-        if (modoOscuro === 'true') {
-          activarModoOscuro();
-        } else {
-          activarModoClaro();
-        }
-      </script>
-    </body>
-
+        <div class="post-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero. Sed cursus ante dapibus diam.
+          </p>
+          <img src="#" alt="Imagen 1" />
+          <p>
+            Morbi nec lacus. Donec vitae sapien ut libero venenatis faucibus.
+            Nullam quis ante.
+          </p>
+        </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="img/foto_usuario.svg" alt="Perfil 2" />
+          <h3>Usuario 2</h3>
+        </div>
+        <div class="post-content">
+          <p>
+            Ut lobortis, urna nec cursus pellentesque, eros elit dictum ipsum, a
+            egestas mauris urna sed lectus. Aliquam vel eros vel neque vehicula
+            condimentum nec in sapien.
+          </p>
+          <p>
+            Vivamus sed justo eget augue feugiat ullamcorper nec sit amet metus.
+          </p>
+        </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="img/foto_usuario.svg" alt="Perfil 3" />
+          <h3>Usuario 3</h3>
+        </div>
+        <div class="post-content">
+          <p>
+            Suspendisse et bibendum turpis. In hac habitasse platea dictumst.
+            Fusce at felis sed odio efficitur placerat.
+          </p>
+          <img src="#" alt="Imagen 3" />
+        </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="js/fire.js"></script>
+    <script src="js/inicio.js"></script>
+  </body>
 </html>
