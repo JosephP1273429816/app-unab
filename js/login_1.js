@@ -1,36 +1,3 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
-const firebaseConfig = {
-  apiKey: "AIzaSyAUg3rSb49LaMSXyONB7wdjQRClog3lC5I",
-  authDomain: "unab-app-ea396.firebaseapp.com",
-  projectId: "unab-app-ea396",
-  storageBucket: "unab-app-ea396.appspot.com",
-  messagingSenderId: "883439198464",
-  appId: "1:883439198464:web:44c91c737efea0521093e5",
-  measurementId: "G-DJ2T3GY8E3",
-};
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-
-const loginForm = document.getElementById("loginForm");
-loginForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const email = loginForm["id"].value;
-  const password = loginForm["password"].value;
-
-  try {
-    await signInWithEmailAndPassword(auth, email, password);
-    // Redirige al usuario a "inicio.html" después del inicio de sesión
-    window.location.href = "inicio.html";
-  } catch (error) {
-    console.error("Error al iniciar sesión:", error.message);
-    // Aquí puedes mostrar un mensaje de error al usuario si lo deseas
-  }
-});
 // Obtener el estado del modo oscuro del localStorage
 const modoOscuro = localStorage.getItem("darkMode");
 
@@ -68,3 +35,37 @@ if (modoOscuro === "true") {
   console.log("Modo claro activado desde el localStorage.");
   activarModoClaro();
 }
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyAUg3rSb49LaMSXyONB7wdjQRClog3lC5I",
+  authDomain: "unab-app-ea396.firebaseapp.com",
+  projectId: "unab-app-ea396",
+  storageBucket: "unab-app-ea396.appspot.com",
+  messagingSenderId: "883439198464",
+  appId: "1:883439198464:web:44c91c737efea0521093e5",
+  measurementId: "G-DJ2T3GY8E3",
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+
+const loginForm = document.getElementById("loginForm");
+loginForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = loginForm["id"].value;
+  const password = loginForm["password"].value;
+
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    // Redirige al usuario a "inicio.html" después del inicio de sesión
+    window.location.href = "inicio.html";
+  } catch (error) {
+    console.error("Error al iniciar sesión:", error.message);
+    // Aquí puedes mostrar un mensaje de error al usuario si lo deseas
+  }
+});
