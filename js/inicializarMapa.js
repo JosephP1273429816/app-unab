@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       zoom: 15,
       mapTypeId: "roadmap",
       disableDefaultUI: true,
+      gestureHandling: "greedy",
     });
 
     // Define los estilos de mapa oscuro

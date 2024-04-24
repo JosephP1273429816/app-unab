@@ -12,16 +12,14 @@ const firebaseConfig = {
 // Inicializa Firebase
 firebase.initializeApp(firebaseConfig);
 
-// Verifica el estado de autenticación al cargar la página
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         // Usuario autenticado, puedes realizar acciones adicionales aquí
         console.log("El usuario ha iniciado sesión:", user.email);
         const userEmail = user.email.toLowerCase(); // Convertir el correo a minúsculas para comparación
 
-        // Obtener una referencia a la base de datos de Firebase
-        const dbRef = firebase.database().ref("usuarios");
-        // Realizar acciones adicionales con la base de datos si es necesario
+        // Redirigir al usuario autenticado a la página de inicio
+        window.location.href = "inicio.html";
     } else {
         console.error("No hay usuario autenticado.");
         window.location.href = "index.html"; // Redirige al inicio
