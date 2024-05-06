@@ -1,1 +1,107 @@
-const _0xfb9d16=_0xdd79;(function(_0x5bec2f,_0x107569){const _0x54d25a=_0xdd79,_0x3d79c8=_0x5bec2f();while(!![]){try{const _0x576c14=parseInt(_0x54d25a(0xd7))/(-0x23ec+0x822+0x1bcb)*(-parseInt(_0x54d25a(0x91))/(-0x1ac6+-0x2f*-0x59+-0xf3*-0xb))+parseInt(_0x54d25a(0x92))/(0x2657*0x1+0x1b3f*0x1+-0x4193)*(parseInt(_0x54d25a(0xc9))/(0x2323+0xcbb+0x2*-0x17ed))+parseInt(_0x54d25a(0xa5))/(-0x204e+-0x2636*-0x1+-0x89*0xb)*(-parseInt(_0x54d25a(0x8f))/(-0x24f8+-0xbf*-0x29+0x1*0x667))+-parseInt(_0x54d25a(0xaf))/(0x1554+-0x1*-0x1835+-0x2d82)*(-parseInt(_0x54d25a(0xb6))/(-0x6e9*0x1+0x7c6+-0x1*0xd5))+parseInt(_0x54d25a(0xbb))/(-0x1644+0x7*0x35+0x11*0x13a)*(parseInt(_0x54d25a(0xac))/(0x2*0x7e1+0x2228+0x18f*-0x20))+parseInt(_0x54d25a(0xd9))/(-0x22*0x116+-0x12de+-0x37d5*-0x1)*(-parseInt(_0x54d25a(0xbd))/(-0xfa8+-0x2*0xb82+0x26b8))+-parseInt(_0x54d25a(0xd4))/(0x1631+0x169f+-0x1*0x2cc3)*(-parseInt(_0x54d25a(0x99))/(0x11*0xc6+0x1ed8+-0x2bf0));if(_0x576c14===_0x107569)break;else _0x3d79c8['push'](_0x3d79c8['shift']());}catch(_0x7ab29e){_0x3d79c8['push'](_0x3d79c8['shift']());}}}(_0x4e7c,0x2d68e+0xf1ed2+-0x94961));import{initializeApp}from'https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js';function _0x4e7c(){const _0x33cade=['ById','483VBaaYW','getItem','ot.com','src','Modo\x20oscur','4c91c737ef','Clog3lC5I','62456WbPQzk','o...','body','HoqCR','mGiSN','9JrkTjm','o\x20activado','12BRyglL','log','ooJDJ','css','ZSiKh','rSb49LaMSX','ro.css','darkMode','unab-app-e','dark-mode','add','a396.fireb','25152lbcDay','ZFwpz','Activando\x20','G-DJ2T3GY8','bTaiE','...','hite.png','tor','ge.','aseapp.com','8464:web:4','26tiGnrm','a396','link#mapa-','11giafgX','setItem','5313825UEbGbY','remove','modo\x20oscur','1:88343919','logo-img','img/logo-w','false','ea0521093e','KEJYd','5521836fmsGvm','classList','45162zmTasM','222TEiexw','gPlAq','Modo\x20claro','8834391984','href','querySelec','ocalStorag','5934754oCgIUZ','css/regist','\x20desde\x20el\x20','UGwXE','jRNzC','localStora','yONB7wdjQR','NsRvG','true','\x20activado\x20','cKvcn','ro-dark.cs','5ZRseMI','XbIvl','getElement','modo\x20claro','PrbzN','AIzaSyAUg3','desde\x20el\x20l','3682740HTLBOr','a396.appsp'];_0x4e7c=function(){return _0x33cade;};return _0x4e7c();}import{getAuth,createUserWithEmailAndPassword}from'https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js';import{getDatabase,ref,push}from'https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js';const firebaseConfig={'apiKey':_0xfb9d16(0xaa)+_0xfb9d16(0xc2)+_0xfb9d16(0x9f)+_0xfb9d16(0xb5),'authDomain':_0xfb9d16(0xc5)+_0xfb9d16(0xc8)+_0xfb9d16(0xd2),'projectId':_0xfb9d16(0xc5)+_0xfb9d16(0xd5),'storageBucket':_0xfb9d16(0xc5)+_0xfb9d16(0xad)+_0xfb9d16(0xb1),'messagingSenderId':_0xfb9d16(0x95)+'64','appId':_0xfb9d16(0xdc)+_0xfb9d16(0xd3)+_0xfb9d16(0xb4)+_0xfb9d16(0x8d)+'5','measurementId':_0xfb9d16(0xcc)+'E3'};export const app=initializeApp(firebaseConfig);export const auth=getAuth();export const db=getDatabase();const modoOscuro=localStorage[_0xfb9d16(0xb0)](_0xfb9d16(0xc4));function _0xdd79(_0x35e15b,_0x8ce36b){const _0x566abc=_0x4e7c();return _0xdd79=function(_0x13e902,_0x304e4c){_0x13e902=_0x13e902-(-0x2*-0x1+-0x5*-0x3b2+-0x11ef*0x1);let _0x3ba3bf=_0x566abc[_0x13e902];return _0x3ba3bf;},_0xdd79(_0x35e15b,_0x8ce36b);}function activarModoOscuro(){const _0x58e26d=_0xfb9d16,_0x33ff35={'ooJDJ':_0x58e26d(0xcb)+_0x58e26d(0xdb)+_0x58e26d(0xb7),'jRNzC':_0x58e26d(0xc6),'ZFwpz':_0x58e26d(0xd6)+_0x58e26d(0xc0),'UGwXE':_0x58e26d(0x9a)+_0x58e26d(0xa4)+'s','PrbzN':_0x58e26d(0xc4),'HoqCR':_0x58e26d(0xa1),'gPlAq':_0x58e26d(0xdd),'KEJYd':_0x58e26d(0xde)+_0x58e26d(0xcf)};console[_0x58e26d(0xbe)](_0x33ff35[_0x58e26d(0xbf)]),document[_0x58e26d(0xb8)][_0x58e26d(0x90)][_0x58e26d(0xc7)](_0x33ff35[_0x58e26d(0x9d)]);const _0x850e5b=document[_0x58e26d(0x97)+_0x58e26d(0xd0)](_0x33ff35[_0x58e26d(0xca)]);_0x850e5b&&(_0x850e5b[_0x58e26d(0x96)]=_0x33ff35[_0x58e26d(0x9c)]);localStorage[_0x58e26d(0xd8)](_0x33ff35[_0x58e26d(0xa9)],_0x33ff35[_0x58e26d(0xb9)]);const _0x1246ea=document[_0x58e26d(0xa7)+_0x58e26d(0xae)](_0x33ff35[_0x58e26d(0x93)]);_0x1246ea&&(_0x1246ea[_0x58e26d(0xb2)]=_0x33ff35[_0x58e26d(0x8e)]);}function activarModoClaro(){const _0x3f5a23=_0xfb9d16,_0x556d25={'XbIvl':_0x3f5a23(0xcb)+_0x3f5a23(0xa8)+_0x3f5a23(0xce),'NsRvG':_0x3f5a23(0xc6),'mGiSN':_0x3f5a23(0xd6)+_0x3f5a23(0xc0),'bTaiE':_0x3f5a23(0x9a)+_0x3f5a23(0xc3),'ZSiKh':_0x3f5a23(0xc4),'cKvcn':_0x3f5a23(0xdf)};console[_0x3f5a23(0xbe)](_0x556d25[_0x3f5a23(0xa6)]),document[_0x3f5a23(0xb8)][_0x3f5a23(0x90)][_0x3f5a23(0xda)](_0x556d25[_0x3f5a23(0xa0)]);const _0x6b2c49=document[_0x3f5a23(0x97)+_0x3f5a23(0xd0)](_0x556d25[_0x3f5a23(0xba)]);_0x6b2c49&&(_0x6b2c49[_0x3f5a23(0x96)]=_0x556d25[_0x3f5a23(0xcd)]),localStorage[_0x3f5a23(0xd8)](_0x556d25[_0x3f5a23(0xc1)],_0x556d25[_0x3f5a23(0xa3)]);}modoOscuro===_0xfb9d16(0xa1)?(console[_0xfb9d16(0xbe)](_0xfb9d16(0xb3)+_0xfb9d16(0xbc)+_0xfb9d16(0x9b)+_0xfb9d16(0x9e)+_0xfb9d16(0xd1)),activarModoOscuro()):(console[_0xfb9d16(0xbe)](_0xfb9d16(0x94)+_0xfb9d16(0xa2)+_0xfb9d16(0xab)+_0xfb9d16(0x98)+'e.'),activarModoClaro());
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+import {
+  getDatabase,
+  ref,
+  push,
+} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAUg3rSb49LaMSXyONB7wdjQRClog3lC5I",
+  authDomain: "unab-app-ea396.firebaseapp.com",
+  projectId: "unab-app-ea396",
+  storageBucket: "unab-app-ea396.appspot.com",
+  messagingSenderId: "883439198464",
+  appId: "1:883439198464:web:44c91c737efea0521093e5",
+  measurementId: "G-DJ2T3GY8E3",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const db = getDatabase();
+
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.toUpperCase();
+    const id = document.getElementById("id").value.toUpperCase();
+    const email = document.getElementById("email").value.trim().toLowerCase(); // Convertir a minúsculas y quitar espacios adicionales
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const carrera = document.getElementById("carrera").value;
+
+    // Validar el correo electrónico
+    if (!email.endsWith("@unab.edu.co")) {
+      alert("El correo electrónico debe ser de dominio unab.edu.co.");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
+      return;
+    }
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredential.user;
+
+      await push(ref(db, "usuarios"), {
+        nombre: name,
+        id: id,
+        correo: email,
+        uid: user.uid,
+        carrera: carrera,
+      });
+
+      alert("Usuario registrado exitosamente!");
+      window.location.href = "inicio.html";
+    } catch (error) {
+      alert("Error al registrar usuario: " + error.message);
+    }
+  });
+// Obtener el estado del modo oscuro del localStorage
+const modoOscuro = localStorage.getItem("darkMode");
+
+// Función para cambiar al modo oscuro
+function activarModoOscuro() {
+  console.log("Activando modo oscuro...");
+  document.body.classList.add("dark-mode");
+  const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
+  if (link) {
+    link.href = "css/registro-dark.css"; // Establecer el enlace al modo oscuro
+  }
+  localStorage.setItem("darkMode", "true"); // Guardar el estado del modo oscuro
+  const logoImg = document.getElementById("logo-img");
+  if (logoImg) {
+    logoImg.src = "img/logo-white.png"; // Ruta de la imagen en modo oscuro
+  }
+}
+
+// Función para cambiar al modo claro
+function activarModoClaro() {
+  console.log("Activando modo claro...");
+  document.body.classList.remove("dark-mode");
+  const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
+  if (link) {
+    link.href = "css/registro.css"; // Establecer el enlace al modo claro
+  }
+  localStorage.setItem("darkMode", "false"); // Guardar el estado del modo claro
+}
+
+// Cambiar al modo oscuro si está activado en el localStorage
+if (modoOscuro === "true") {
+  console.log("Modo oscuro activado desde el localStorage.");
+  activarModoOscuro();
+} else {
+  console.log("Modo claro activado desde el localStorage.");
+  activarModoClaro();
+}

@@ -1,1 +1,182 @@
-function _0x5e65(_0x44e127,_0x1b362f){const _0x20f1a7=_0xaa24();return _0x5e65=function(_0x26f7a8,_0x796f7f){_0x26f7a8=_0x26f7a8-(-0x1b1e+-0x52*-0x71+-0x89c);let _0x849cd4=_0x20f1a7[_0x26f7a8];return _0x849cd4;},_0x5e65(_0x44e127,_0x1b362f);}const _0x5d2133=_0x5e65;(function(_0x26506c,_0x3642f2){const _0x598140=_0x5e65,_0x41c98d=_0x26506c();while(!![]){try{const _0x509bae=parseInt(_0x598140(0x99))/(0x2*0xcd8+0x72*0x39+-0x3311)+-parseInt(_0x598140(0x11f))/(-0x18d*0x17+-0xb9b+0x2f48)+parseInt(_0x598140(0x131))/(0xc1+-0xf3e+-0xe80*-0x1)+-parseInt(_0x598140(0x103))/(-0x119d+-0x1*-0x249b+-0x15b*0xe)*(parseInt(_0x598140(0xfe))/(0x1722+0x8a6+-0x1fc3))+-parseInt(_0x598140(0xf3))/(-0x1dd+0x3fb*0x3+-0x1ad*0x6)*(-parseInt(_0x598140(0x13b))/(-0x51b+-0x1155+-0x47*-0x51))+parseInt(_0x598140(0xb7))/(0x297+0x2*0x10a5+-0x23d9)+-parseInt(_0x598140(0x85))/(-0x3c1*0x4+-0x11*-0x1d0+-0xfc3)*(parseInt(_0x598140(0xbf))/(0xb3*0xe+0xf72+-0x1932));if(_0x509bae===_0x3642f2)break;else _0x41c98d['push'](_0x41c98d['shift']());}catch(_0x10ff0f){_0x41c98d['push'](_0x41c98d['shift']());}}}(_0xaa24,-0x6a4f9*-0x1+0xaf6bf+0xc2*-0xcc0),document[_0x5d2133(0xca)+_0x5d2133(0x11c)](_0x5d2133(0xe3)+_0x5d2133(0xd2),function(){const _0x5b01ad=_0x5d2133,_0x46694c={'VmjaR':_0x5b01ad(0xb9),'BSEIA':_0x5b01ad(0xd3),'Vverg':_0x5b01ad(0xff)+_0x5b01ad(0x84)+_0x5b01ad(0x127)+_0x5b01ad(0x88),'IJDjr':function(_0x26ba2d,_0x5eb241){return _0x26ba2d===_0x5eb241;},'ZbVoK':_0x5b01ad(0x96)+'e','BHsWU':_0x5b01ad(0xc1),'WglGT':_0x5b01ad(0x120)+'r','UOJBw':function(_0x3239b0,_0x24ac44){return _0x3239b0+_0x24ac44;},'UFdYt':_0x5b01ad(0xc9),'vSqWA':_0x5b01ad(0x90)+'g','ogdKg':function(_0x3dbecb,_0x34d292){return _0x3dbecb(_0x34d292);},'aUWGc':_0x5b01ad(0xd0)+_0x5b01ad(0x135)+_0x5b01ad(0xf4)+_0x5b01ad(0xf2)+_0x5b01ad(0xd6)+_0x5b01ad(0x104),'LAeiB':_0x5b01ad(0x117),'dkiaf':_0x5b01ad(0xa9),'APLbo':_0x5b01ad(0x113)+_0x5b01ad(0xbe)+_0x5b01ad(0x111),'yAWQo':_0x5b01ad(0x101),'LZGxJ':function(_0x4b3f39,_0x12275d,_0x524c21,_0x5d4cf4){return _0x4b3f39(_0x12275d,_0x524c21,_0x5d4cf4);},'sRMQe':_0x5b01ad(0xdf)+'G','pcNnz':_0x5b01ad(0x8c),'kBkmE':_0x5b01ad(0xec)+'le','hCgqJ':_0x5b01ad(0x7e),'DYQRI':_0x5b01ad(0x114),'kSTPV':_0x5b01ad(0x7b)+_0x5b01ad(0xac)+_0x5b01ad(0xfd)+_0x5b01ad(0x112),'gCzVK':_0x5b01ad(0xed)+_0x5b01ad(0x8f)+_0x5b01ad(0xda),'BGcKZ':_0x5b01ad(0xed)+_0x5b01ad(0x97),'DGjYF':_0x5b01ad(0xed)+_0x5b01ad(0xf6)+_0x5b01ad(0x129),'yKMfe':_0x5b01ad(0xaa)+'64','CwaAV':_0x5b01ad(0x122)+_0x5b01ad(0xcc)+_0x5b01ad(0x87)+_0x5b01ad(0x8a)+'5','EPJYO':_0x5b01ad(0x92)+'E3'},_0x181c01=document[_0x5b01ad(0x13d)+_0x5b01ad(0x102)](_0x46694c[_0x5b01ad(0x9a)]),_0x3004e5=document[_0x5b01ad(0x13d)+_0x5b01ad(0x102)](_0x46694c[_0x5b01ad(0xe1)]);_0x181c01[_0x5b01ad(0xca)+_0x5b01ad(0x11c)](_0x46694c[_0x5b01ad(0xa8)],function(){const _0x27d829=_0x5b01ad;_0x3004e5[_0x27d829(0xbd)][_0x27d829(0x89)](_0x46694c[_0x27d829(0xd4)]);});const _0x5d9a3b={'apiKey':_0x46694c[_0x5b01ad(0x12a)],'authDomain':_0x46694c[_0x5b01ad(0x8b)],'projectId':_0x46694c[_0x5b01ad(0xdc)],'storageBucket':_0x46694c[_0x5b01ad(0xe8)],'messagingSenderId':_0x46694c[_0x5b01ad(0xa7)],'appId':_0x46694c[_0x5b01ad(0xe6)],'measurementId':_0x46694c[_0x5b01ad(0x11d)]};firebase[_0x5b01ad(0x138)+_0x5b01ad(0x9f)](_0x5d9a3b),firebase[_0x5b01ad(0x118)]()[_0x5b01ad(0x7d)+_0x5b01ad(0xcf)](function(_0x271d03){const _0x47d75f=_0x5b01ad;if(_0x271d03){const _0xfe495b=_0x271d03[_0x47d75f(0xc6)][_0x47d75f(0xb1)+'e'](),_0x4a952d=firebase[_0x47d75f(0x124)]()[_0x47d75f(0xe2)](_0x46694c[_0x47d75f(0x110)]);_0x4a952d['on'](_0x46694c[_0x47d75f(0x100)],function(_0x465237){const _0x12510d=_0x47d75f,_0x566fb9={'SSRLj':_0x46694c[_0x12510d(0xe5)],'qGMxF':_0x46694c[_0x12510d(0xfa)],'KKyzC':function(_0x133a87,_0x5cf689){const _0x417e13=_0x12510d;return _0x46694c[_0x417e13(0xfb)](_0x133a87,_0x5cf689);},'IUwvS':_0x46694c[_0x12510d(0xeb)],'wQjXQ':_0x46694c[_0x12510d(0x78)],'dKBCD':_0x46694c[_0x12510d(0x13a)],'caRpZ':function(_0x549b9f,_0x5e2a1c){const _0x4266aa=_0x12510d;return _0x46694c[_0x4266aa(0xc0)](_0x549b9f,_0x5e2a1c);},'eWcyb':_0x46694c[_0x12510d(0xaf)],'RaYKR':_0x46694c[_0x12510d(0xa5)],'djHfV':function(_0x45dc45,_0x47e7a1){const _0x5e7ed8=_0x12510d;return _0x46694c[_0x5e7ed8(0xc8)](_0x45dc45,_0x47e7a1);}},_0x2577d4=_0x465237[_0x12510d(0x10d)]();_0x2577d4?Object[_0x12510d(0xd7)](_0x2577d4)[_0x12510d(0x12f)](_0x4b1785=>{const _0x13b42f=_0x12510d,_0x42c88d={'LHtIh':_0x566fb9[_0x13b42f(0xa1)]},_0x5cb701=_0x2577d4[_0x4b1785],_0x38214b=_0x5cb701[_0x13b42f(0xf0)][_0x13b42f(0xb1)+'e']();if(_0x566fb9[_0x13b42f(0x7c)](_0x38214b,_0xfe495b)){document[_0x13b42f(0xba)+_0x13b42f(0xb4)](_0x566fb9[_0x13b42f(0x126)])[_0x13b42f(0xea)]=_0x5cb701[_0x13b42f(0x12e)],document[_0x13b42f(0xba)+_0x13b42f(0xb4)](_0x566fb9[_0x13b42f(0x108)])[_0x13b42f(0xea)]=_0x5cb701['id'],document[_0x13b42f(0xba)+_0x13b42f(0xb4)](_0x566fb9[_0x13b42f(0x141)])[_0x13b42f(0xea)]=_0x5cb701[_0x13b42f(0xee)];const _0xbe35b2=firebase[_0x13b42f(0xd5)]()[_0x13b42f(0xe2)](),_0x2dece2=_0xbe35b2[_0x13b42f(0x94)](_0x566fb9[_0x13b42f(0x95)](_0x566fb9[_0x13b42f(0x95)](_0x566fb9[_0x13b42f(0x132)],_0x271d03[_0x13b42f(0x121)]),_0x566fb9[_0x13b42f(0x11a)]));_0x2dece2[_0x13b42f(0xa6)+_0x13b42f(0x13c)]()[_0x13b42f(0xf8)](function(_0x1b1437){const _0x423e47=_0x13b42f;document[_0x423e47(0xba)+_0x423e47(0xb4)](_0x566fb9[_0x423e47(0xbb)])[_0x423e47(0xc5)]=_0x1b1437;})[_0x13b42f(0xce)](function(_0x484cc3){const _0x1d1c54=_0x13b42f;console[_0x1d1c54(0xdd)](_0x42c88d[_0x1d1c54(0xb6)],_0x484cc3);}),_0x566fb9[_0x13b42f(0x82)](_0x44d3fd,_0x5cb701['id']);}}):console[_0x12510d(0xdd)](_0x46694c[_0x12510d(0x81)]);});}else console[_0x47d75f(0xdd)](_0x46694c[_0x47d75f(0x80)]),window[_0x47d75f(0xe7)][_0x47d75f(0xd8)]=_0x46694c[_0x47d75f(0xb2)];});function _0x44d3fd(_0x3a0494){const _0x213082=_0x5b01ad;_0x46694c[_0x213082(0xae)](JsBarcode,_0x46694c[_0x213082(0x125)],_0x3a0494,{'format':_0x46694c[_0x213082(0x137)],'displayValue':![],'width':0x2,'height':0x32});}}));function toggleContextMenu(_0x2943d8){const _0x48cff6=_0x5d2133,_0x42c019={'heZfG':_0x48cff6(0xe9)+'u','bMoUw':function(_0x277032,_0x3e251a){return _0x277032===_0x3e251a;},'jnTkZ':_0x48cff6(0x128),'MbdHM':_0x48cff6(0x133),'oWqeY':function(_0x17870a,_0x254f4e){return _0x17870a+_0x254f4e;},'UGOsL':function(_0x38dda8,_0x30efd3){return _0x38dda8>_0x30efd3;},'KyDRi':function(_0x531840,_0x5a0dd0){return _0x531840+_0x5a0dd0;},'rlFcK':function(_0xf8e2f,_0x4247fc){return _0xf8e2f-_0x4247fc;}};_0x2943d8[_0x48cff6(0x139)+_0x48cff6(0xbc)]();const _0x298596=document[_0x48cff6(0xba)+_0x48cff6(0xb4)](_0x42c019[_0x48cff6(0x10b)]),_0x5a33c8=_0x2943d8[_0x48cff6(0xad)+_0x48cff6(0x7f)];if(_0x42c019[_0x48cff6(0x106)](_0x298596[_0x48cff6(0xf9)][_0x48cff6(0x12b)],_0x42c019[_0x48cff6(0xde)]))_0x298596[_0x48cff6(0xf9)][_0x48cff6(0x12b)]=_0x42c019[_0x48cff6(0xab)];else{_0x298596[_0x48cff6(0xf9)][_0x48cff6(0x12b)]=_0x42c019[_0x48cff6(0xde)];const _0x20e3ca=_0x5a33c8[_0x48cff6(0xb5)+_0x48cff6(0xd9)+'t'](),_0x2a4beb=_0x298596[_0x48cff6(0xb5)+_0x48cff6(0xd9)+'t']();let _0xf20dac=_0x42c019[_0x48cff6(0x8e)](_0x20e3ca[_0x48cff6(0xc2)],_0x5a33c8[_0x48cff6(0x9e)+'h']);_0x42c019[_0x48cff6(0x86)](_0x42c019[_0x48cff6(0xef)](_0xf20dac,_0x2a4beb[_0x48cff6(0x13f)]),window[_0x48cff6(0x134)])&&(_0xf20dac=_0x42c019[_0x48cff6(0xa0)](window[_0x48cff6(0x134)],_0x2a4beb[_0x48cff6(0x13f)])),_0x298596[_0x48cff6(0xf9)][_0x48cff6(0xc2)]=_0x42c019[_0x48cff6(0x8e)](_0xf20dac,'px'),_0x298596[_0x48cff6(0xf9)][_0x48cff6(0x140)]=_0x42c019[_0x48cff6(0x8e)](_0x20e3ca[_0x48cff6(0x140)],'px');}}function closeMenuOnClickOutside(_0x2e7e66){const _0x530ec8=_0x5d2133,_0x42d01e={'CgEFR':_0x530ec8(0xe9)+'u','ZHLRn':_0x530ec8(0x9b)+_0x530ec8(0xb8),'plRrB':_0x530ec8(0x133)},_0x587e18=document[_0x530ec8(0xba)+_0x530ec8(0xb4)](_0x42d01e[_0x530ec8(0x115)]),_0x9dc797=document[_0x530ec8(0x13d)+_0x530ec8(0x102)](_0x42d01e[_0x530ec8(0x7a)]);!_0x587e18[_0x530ec8(0x136)](_0x2e7e66[_0x530ec8(0x116)])&&!_0x9dc797[_0x530ec8(0x136)](_0x2e7e66[_0x530ec8(0x116)])&&(_0x587e18[_0x530ec8(0xf9)][_0x530ec8(0x12b)]=_0x42d01e[_0x530ec8(0x10a)]);}document[_0x5d2133(0xca)+_0x5d2133(0x11c)](_0x5d2133(0x114),closeMenuOnClickOutside),document[_0x5d2133(0xca)+_0x5d2133(0x11c)](_0x5d2133(0xe3)+_0x5d2133(0xd2),function(){const _0x5dcef2=_0x5d2133,_0x410d47={'QmvVH':_0x5dcef2(0xcb),'kiboJ':_0x5dcef2(0x133),'qOrPq':_0x5dcef2(0x128),'oooHz':_0x5dcef2(0x12d)+'d','cypzo':_0x5dcef2(0xf1)+'t','hrsKG':_0x5dcef2(0x130),'kZksk':_0x5dcef2(0x114)};var _0xd8a11c=document[_0x5dcef2(0xba)+_0x5dcef2(0xb4)](_0x410d47[_0x5dcef2(0xa2)]),_0x3ffcfb=document[_0x5dcef2(0x13d)+_0x5dcef2(0x102)](_0x410d47[_0x5dcef2(0x93)]),_0x304a7c=document[_0x5dcef2(0x13d)+_0x5dcef2(0x102)](_0x410d47[_0x5dcef2(0x10e)]);_0xd8a11c[_0x5dcef2(0xca)+_0x5dcef2(0x11c)](_0x410d47[_0x5dcef2(0x13e)],function(){const _0x4d4b5b=_0x5dcef2;_0xd8a11c[_0x4d4b5b(0xbd)][_0x4d4b5b(0x89)](_0x410d47[_0x4d4b5b(0xf5)]),_0xd8a11c[_0x4d4b5b(0xbd)][_0x4d4b5b(0x136)](_0x410d47[_0x4d4b5b(0xf5)])?(_0x3ffcfb[_0x4d4b5b(0xf9)][_0x4d4b5b(0x12b)]=_0x410d47[_0x4d4b5b(0xfc)],_0x304a7c[_0x4d4b5b(0xf9)][_0x4d4b5b(0x12b)]=_0x410d47[_0x4d4b5b(0x105)]):(_0x304a7c[_0x4d4b5b(0xf9)][_0x4d4b5b(0x12b)]=_0x410d47[_0x4d4b5b(0xfc)],_0x3ffcfb[_0x4d4b5b(0xf9)][_0x4d4b5b(0x12b)]=_0x410d47[_0x4d4b5b(0x105)]);});});const modoOscuro=localStorage[_0x5d2133(0x10c)](_0x5d2133(0xc3));function activarModoOscuro(){const _0x52a8d6=_0x5d2133,_0x408d38={'jwltc':_0x52a8d6(0x11e),'PcGzs':_0x52a8d6(0x119)+_0x52a8d6(0x142),'lwdGG':_0x52a8d6(0xa4)+_0x52a8d6(0x79)+_0x52a8d6(0xb3),'TMTrl':_0x52a8d6(0xc3),'rEoPe':_0x52a8d6(0xa3),'RydFS':_0x52a8d6(0x107),'NhGdi':_0x52a8d6(0x91)+_0x52a8d6(0x98)};document[_0x52a8d6(0x11b)][_0x52a8d6(0xbd)][_0x52a8d6(0xe0)](_0x408d38[_0x52a8d6(0xd1)]);const _0x54dba9=document[_0x52a8d6(0x13d)+_0x52a8d6(0x102)](_0x408d38[_0x52a8d6(0x109)]);_0x54dba9&&(_0x54dba9[_0x52a8d6(0xd8)]=_0x408d38[_0x52a8d6(0x123)]);localStorage[_0x52a8d6(0xb0)](_0x408d38[_0x52a8d6(0xf7)],_0x408d38[_0x52a8d6(0xc7)]);const _0x4024bf=document[_0x52a8d6(0xba)+_0x52a8d6(0xb4)](_0x408d38[_0x52a8d6(0x12c)]);_0x4024bf&&(_0x4024bf[_0x52a8d6(0xc5)]=_0x408d38[_0x52a8d6(0xe4)]);}function _0xaa24(){const _0x4324bb=['QmvVH','a396.appsp','TMTrl','then','style','Vverg','IJDjr','kiboJ','yONB7wdjQR','5vhoKXo','Error\x20al\x20o','dkiaf','index.html','tor','2256956BeMWQW','datos.','qOrPq','bMoUw','logo-img','wQjXQ','PcGzs','plRrB','heZfG','getItem','val','hrsKG','dSJXF','LAeiB','ticado.','Clog3lC5I','No\x20hay\x20usu','click','CgEFR','target','usuarios','auth','link#mapa-','RaYKR','body','stener','EPJYO','dark-mode','138496IAHtWH','studentCar','uid','1:88343919','lwdGG','database','sRMQe','IUwvS','URL\x20de\x20la\x20','block','ot.com','kSTPV','display','RydFS','profileCar','nombre','forEach','.card-back','2230218ZmUHOT','eWcyb','none','innerWidth','ntraron\x20da','contains','pcNnz','initialize','preventDef','WglGT','740684SsrEMd','dURL','querySelec','kZksk','width','top','dKBCD','css','BHsWU','_perfil-da','ZHLRn','AIzaSyAUg3','KKyzC','onAuthStat','.nav-list','get','APLbo','aUWGc','djHfV','MzuGs','btener\x20la\x20','18HUYYjP','UGOsL','4c91c737ef','imagen:','toggle','ea0521093e','gCzVK','CODE128','bZdpD','oWqeY','a396.fireb','/perfil.pn','img/logo-w','G-DJ2T3GY8','cypzo','child','caRpZ','studentNam','a396','hite.png','695706RlMceU','kBkmE','.config-bu','false','QAQLq','offsetWidt','App','rlFcK','qGMxF','oooHz','true','css/styles','vSqWA','getDownloa','yKMfe','DYQRI','value','8834391984','MbdHM','rSb49LaMSX','currentTar','LZGxJ','UFdYt','setItem','toLowerCas','yAWQo','rk.css','ById','getBoundin','LHtIh','6721096nvkEUm','tton','active','getElement','SSRLj','ault','classList','ario\x20auten','7212190wmYNFE','UOJBw','studentId','left','darkMode','_perfil.cs','src','email','rEoPe','ogdKg','perfiles/','addEventLi','flipped','8464:web:4','remove','catch','eChanged','No\x20se\x20enco','jwltc','Loaded','userPhoto','VmjaR','storage','a\x20base\x20de\x20','keys','href','gClientRec','aseapp.com','oucEp','BGcKZ','error','jnTkZ','#barcodeSV','add','hCgqJ','ref','DOMContent','NhGdi','BSEIA','CwaAV','location','DGjYF','contextMen','innerText','ZbVoK','.menu-togg','unab-app-e','carrera','KyDRi','correo','.card-fron','arios\x20en\x20l','18LzsBcp','tos\x20de\x20usu'];_0xaa24=function(){return _0x4324bb;};return _0xaa24();}function activarModoClaro(){const _0x4db47f=_0x5d2133,_0x1f456b={'QAQLq':_0x4db47f(0x11e),'dSJXF':_0x4db47f(0x119)+_0x4db47f(0x142),'MzuGs':_0x4db47f(0xa4)+_0x4db47f(0xc4)+'s','bZdpD':_0x4db47f(0xc3),'oucEp':_0x4db47f(0x9c)};document[_0x4db47f(0x11b)][_0x4db47f(0xbd)][_0x4db47f(0xcd)](_0x1f456b[_0x4db47f(0x9d)]);const _0x6aab6d=document[_0x4db47f(0x13d)+_0x4db47f(0x102)](_0x1f456b[_0x4db47f(0x10f)]);_0x6aab6d&&(_0x6aab6d[_0x4db47f(0xd8)]=_0x1f456b[_0x4db47f(0x83)]),localStorage[_0x4db47f(0xb0)](_0x1f456b[_0x4db47f(0x8d)],_0x1f456b[_0x4db47f(0xdb)]);}modoOscuro===_0x5d2133(0xa3)?activarModoOscuro():activarModoClaro();
+// Función para generar y mostrar el código de barras Code 128 en un elemento SVG
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+  
+    menuToggle.addEventListener("click", function () {
+      navList.classList.toggle("active");
+    });
+  
+    // Configura tu proyecto de Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyAUg3rSb49LaMSXyONB7wdjQRClog3lC5I",
+      authDomain: "unab-app-ea396.firebaseapp.com",
+      projectId: "unab-app-ea396",
+      storageBucket: "unab-app-ea396.appspot.com",
+      messagingSenderId: "883439198464",
+      appId: "1:883439198464:web:44c91c737efea0521093e5",
+      measurementId: "G-DJ2T3GY8E3",
+    };
+  
+    // Inicializa Firebase
+    firebase.initializeApp(firebaseConfig);
+  
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        const userEmail = user.email.toLowerCase(); // Convertir el correo a minúsculas para comparación
+  
+        // Referencia a la base de datos de Firebase
+        const dbRef = firebase.database().ref("usuarios");
+  
+        // Escuchar cambios en la base de datos
+        dbRef.on("value", function (snapshot) {
+          const usuarios = snapshot.val();
+  
+          if (usuarios) {
+            // Iterar sobre todos los usuarios en la base de datos
+            Object.keys(usuarios).forEach((userId) => {
+              const usuario = usuarios[userId];
+              const correoUsuario = usuario.correo.toLowerCase(); // Convertir el correo del usuario actual a minúsculas
+  
+              if (correoUsuario === userEmail) {
+                // Actualizar los datos del perfil en la página
+                document.getElementById("studentName").innerText = usuario.nombre;
+                document.getElementById("studentId").innerText = usuario.id;
+                document.getElementById("studentCarr").innerText =
+                  usuario.carrera;
+  
+                // Obtener la referencia a la imagen del usuario en Firebase Storage
+                const storageRef = firebase.storage().ref();
+                const photoRef = storageRef.child(
+                  "perfiles/" + user.uid + "/perfil.png"
+                );
+  
+                // Obtener la URL de descarga de la imagen y mostrarla en el perfil
+                photoRef
+                  .getDownloadURL()
+                  .then(function (url) {
+                    document.getElementById("userPhoto").src = url; // Mostrar la imagen del usuario
+                  })
+                  .catch(function (error) {
+                    console.error("Error al obtener la URL de la imagen:", error);
+                  });
+  
+                // Generar el código de barras con el ID de estudiante
+                generateBarcode(usuario.id);
+              }
+            });
+          } else {
+            console.error(
+              "No se encontraron datos de usuarios en la base de datos."
+            );
+          }
+        });
+      } else {
+        console.error("No hay usuario autenticado.");
+        window.location.href = "index.html"; // Redirige al inicio si no hay usuario autenticado
+      }
+    });
+  
+    // Función para generar y mostrar el código de barras Code 128 en un elemento SVG
+    function generateBarcode(studentId) {
+      JsBarcode("#barcodeSVG", studentId, {
+        format: "CODE128", // Tipo de código de barras
+        displayValue: false, // Ocultar el valor del código
+        width: 2, // Ajusta el ancho del código de barras (valor mayor hace que sea más ancho)
+        height: 50, // Altura del código de barras
+      });
+    }
+  });
+  
+  function toggleContextMenu(event) {
+    event.preventDefault(); // Evita que el enlace se abra
+    const menu = document.getElementById("contextMenu");
+    const button = event.currentTarget;
+  
+    // Mostrar u ocultar el menú según su estado actual
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+  
+      const buttonRect = button.getBoundingClientRect();
+      const menuRect = menu.getBoundingClientRect();
+  
+      // Calcula la posición horizontal del menú
+      let leftPosition = buttonRect.left + button.offsetWidth;
+  
+      // Ajusta la posición si el menú se sale de la ventana
+      if (leftPosition + menuRect.width > window.innerWidth) {
+        leftPosition = window.innerWidth - menuRect.width;
+      }
+  
+      menu.style.left = leftPosition + "px";
+      menu.style.top = buttonRect.top + "px";
+    }
+  }
+  // Función para ocultar el menú si se hace clic en cualquier parte de la pantalla excepto en el menú o el botón
+  function closeMenuOnClickOutside(event) {
+    const menu = document.getElementById("contextMenu");
+    const button = document.querySelector(".config-button");
+  
+    // Verifica si el clic ocurrió fuera del menú y el botón
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+      menu.style.display = "none";
+    }
+  }
+  
+  // Agregar manejador de eventos al hacer clic en cualquier parte de la pantalla
+  document.addEventListener("click", closeMenuOnClickOutside);
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    var profileCard = document.getElementById("profileCard");
+    var cardFront = document.querySelector(".card-front");
+    var cardBack = document.querySelector(".card-back");
+  
+    profileCard.addEventListener("click", function () {
+      profileCard.classList.toggle("flipped"); // Voltear el carnet al hacer clic
+      if (profileCard.classList.contains("flipped")) {
+        // Mostrar el contenido de la parte trasera cuando el carnet está volteado
+        cardFront.style.display = "none";
+        cardBack.style.display = "block";
+      } else {
+        // Mostrar el contenido de la parte frontal cuando el carnet está en su posición original
+        cardBack.style.display = "none";
+        cardFront.style.display = "block";
+      }
+    });
+  });
+  // Obtener el estado del modo oscuro del localStorage
+  const modoOscuro = localStorage.getItem("darkMode");
+  
+  // Función para cambiar al modo oscuro
+  function activarModoOscuro() {
+    document.body.classList.add("dark-mode");
+    const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
+    if (link) {
+      link.href = "css/styles_perfil-dark.css"; // Establecer el enlace al modo oscuro
+    }
+    localStorage.setItem("darkMode", "true"); // Guardar el estado del modo oscuro
+    const logoImg = document.getElementById("logo-img");
+    if (logoImg) {
+      logoImg.src = "img/logo-white.png"; // Ruta de la imagen en modo oscuro
+    }
+  }
+  
+  // Función para cambiar al modo claro
+  function activarModoClaro() {
+    document.body.classList.remove("dark-mode");
+    const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
+    if (link) {
+      link.href = "css/styles_perfil.css"; // Establecer el enlace al modo claro
+    }
+    localStorage.setItem("darkMode", "false"); // Guardar el estado del modo claro
+  }
+  
+  // Cambiar al modo oscuro si está activado en el localStorage
+  if (modoOscuro === "true") {
+    activarModoOscuro();
+  } else {
+    activarModoClaro();
+  }
+  

@@ -27,6 +27,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     window.location.href = "index.html"; // Redirige al inicio
   }
 });
+
 const enviarCorreoRestablecimiento = () => {
   const email = firebase.auth().currentUser.email;
   console.log("Correo del usuario:", email);
@@ -52,18 +53,20 @@ const enviarCorreoRestablecimiento = () => {
       );
     });
 };
+
 const botonRestablecerContrasena = document.getElementById("contraseña");
 botonRestablecerContrasena.addEventListener(
   "click",
   enviarCorreoRestablecimiento
 );
+
 // Variables globales para Cropper.js y ventana modal
 let cropper;
 let imagenEditada; // Variable para almacenar la imagen editada
 const modal = document.getElementById("modal-edicion-imagen");
 const btnEditarImagen = document.getElementById("editar-imagen");
 const btnGuardarCambiosModal = document.getElementById("guardar-cambios-modal");
-const spanCerrarModal = document.getElementsByClassName("close")[0];
+const spanCerrarModal = document.querySelector("#modal-edicion-imagen .close");
 
 // Función para cargar la imagen seleccionada en Cropper.js
 function cargarImagenEnCropper(file) {

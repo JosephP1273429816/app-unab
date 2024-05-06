@@ -42,6 +42,37 @@ header {
     opacity: 1;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
+  z-index: 1000;
+  /* Índice z alto para que esté por encima de todo */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.close {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
 
 .fade-in {
   animation: fade-in 1s ease forwards;
@@ -224,7 +255,9 @@ a.active {
   header {
     padding: 10px;
   }
-
+  .close{
+    top: 80px;
+  }
   .logo img {
     max-width: 150px;
   }
