@@ -136,7 +136,7 @@ btnGuardarPrincipal.addEventListener("click", function () {
         .put(imagenEditada)
         .then(() => {
           console.log("Imagen subida correctamente");
-          alert("Imagen subida correctamente.");
+          alert("Cambios guardados.");
           location.reload();
         })
         .catch((error) => {
@@ -148,7 +148,7 @@ btnGuardarPrincipal.addEventListener("click", function () {
         "No se ha seleccionado ninguna imagen, pero se guardaron otros cambios."
       );
       alert(
-        "No se ha seleccionado ninguna imagen, pero se guardaron otros cambios."
+        "Cambios guardados."
       );
       location.reload();
     }

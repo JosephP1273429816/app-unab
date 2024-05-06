@@ -133,12 +133,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var cardFront = document.querySelector(".card-front");
     var cardBack = document.querySelector(".card-back");
   
+    // Contador de volteos
+    var volteos = 0;
+    // Número deseado de volteos para abrir otro HTML
+    var volteosDeseados = 2; // Puedes ajustar este número según lo necesites
+  
     profileCard.addEventListener("click", function () {
       profileCard.classList.toggle("flipped"); // Voltear el carnet al hacer clic
       if (profileCard.classList.contains("flipped")) {
         // Mostrar el contenido de la parte trasera cuando el carnet está volteado
         cardFront.style.display = "none";
         cardBack.style.display = "block";
+        volteos++; // Incrementar el contador de volteos
+        // Verificar si se alcanzó el número deseado de volteos
+        if (volteos >= volteosDeseados) {
+          // Redireccionar a otro HTML
+          window.location.href = "doom.html"; // Reemplaza "otro.html" con la ruta del HTML que deseas abrir
+        }
       } else {
         // Mostrar el contenido de la parte frontal cuando el carnet está en su posición original
         cardBack.style.display = "none";
@@ -146,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  
   // Obtener el estado del modo oscuro del localStorage
   const modoOscuro = localStorage.getItem("darkMode");
   
