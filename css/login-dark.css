@@ -1,150 +1,176 @@
-/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Utilizamos la fuente Roboto para todo el texto */
-  body {
+}
+
+
+/* Utilizamos la fuente Roboto para todo el texto */
+
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url('fondo-dark.png'); /* Imagen de fondo vertical */
-    background-size: cover; /* Ajuste para cubrir toda la pantalla */
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Ocultar el desplazamiento horizontal */
-    height: 100vh; /* Altura igual al 100% de la altura de la ventana */
+    overflow-x: hidden;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-  }
+    background-image: radial-gradient(circle at 20% 20%, #000, #0b71c5, #000, #2196F3, #000, #045da5, #014985);
+    position: relative;
+}
 
-  .logo img {
+
+/* Lienzo para el fondo animado */
+
+#galaxyCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.logo img {
     max-width: 200px;
     height: auto;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  /* Media Query para dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    body {
-      background-image: url('fondo_phone-dark.png'); /* Imagen de fondo horizontal */
-    }
-  }
-  
-  /* Estilo para el contenedor principal */
-  .container {
-    width: 90%; /* Cambiamos el ancho a un porcentaje */
+}
+
+.container {
+    width: 90%;
+    /* Cambiamos el ancho a un porcentaje */
     max-width: 400px;
-    padding: 30px; /* Aumentamos el margen interno */
+    padding: 30px;
+    /* Aumentamos el margen interno */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: #2b2b2bce;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     /* Animación de entrada suave */
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    opacity: 0; /* Comienza con opacidad cero */
-  }
-  
-  @keyframes slideIn {
+    opacity: 0;
+    /* Comienza con opacidad cero */
+}
+
+@keyframes slideIn {
     from {
-      transform: translateY(-20px);
-      opacity: 0;
+        transform: translateY(-20px);
+        opacity: 0;
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  /* Estilo para el encabezado centrado */
-  header {
+}
+
+
+/* Estilo para el encabezado centrado */
+
+header {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  /* Estilo para el logotipo */
-  img {
+}
+
+
+/* Estilo para el logotipo */
+
+img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-  }
-  
-  /* Estilo para el título */
-  h2 {
+}
+
+
+/* Estilo para el título */
+
+h2 {
     font-size: 24px;
     color: #fff;
     margin-bottom: 10px;
-  }
-  
-  /* Estilo para los formularios */
-  form {
+}
+
+
+/* Estilo para los formularios */
+
+form {
     margin-bottom: 20px;
-  }
-  
-  /* Estilo para los campos de entrada y botón */
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  button, .boton {
+}
+
+
+/* Estilo para los campos de entrada y botón */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button,
+.boton {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 50px;
     box-sizing: border-box;
+    color: black;
     margin-bottom: 10px;
-    /* Animación de hover para el botón */
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  /* Estilo para el botón "Registrarse" */
-  button, .boton {
+}
+
+input::placeholder {
+    color: black;
+}
+
+button,
+.boton {
     background-color: #2196F3;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  /* Estilo para los enlaces */
-  .register-link,
-  .o_contraseña-link {
-    display: inline-block;
-    margin-right: 10px;
+}
+
+.links-container {
+    display: flex;
+}
+
+.register-link,
+.o_contraseña-link {
     text-decoration: none;
-    color: #fff;
+    color: white;
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Estilo para los enlaces al pasar el cursor */
-  .register-link:hover,
-  .o_contraseña-link:hover {
-    color: #1e80cf; /* Cambia el color al pasar el cursor */
-  }
-  
-  /* Estilo para los botones al pasar el cursor */
-  button:hover {
-    background-color: #1e80cf; /* Cambia el color al pasar el cursor */
-    transform: scale(1.05); /* Aumenta el tamaño del botón */
-  }
-  
+}
+
+.register-link {
+    margin-right: 10px;
+}
+
+.register-link:hover,
+.o_contraseña-link:hover {
+    color: #cccccc;
+}
+
+button:hover {
+    background-color: #005da8;
+    transform: scale(1.05);
+}
+
+.boton:hover {
+    background-color: #005da8;
+    transform: scale(1.05);
+}

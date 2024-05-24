@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="stylesheet" href="/css/creditos.css">
+</head>
+
+<body>
+    <canvas id="galaxyCanvas"></canvas>
+    <div class="credits-container">
+        <header>
+            <a href="inicio.html">
+                <img src="/img/logo-white.png" alt="University Logo">
+            </a>
+            <h1>Créditos del Proyecto</h1>
+        </header>
+        <div class="credits-list">
+            <div class="credit">
+                <img src="#" alt="Joseph">
+                <h2>Joseph</h2>
+                <p>Desarrollo de la página web. Propuesta del proyecto. Líder del equipo. Responsable de la implementación de tecnologías avanzadas para la optimización del rendimiento. Coordinó la comunicación entre los miembros del equipo y supervisó el
+                    progreso del proyecto. Contribuyó significativamente en la toma de decisiones técnicas y estratégicas.</p>
+            </div>
+            <div class="credit">
+                <img src="#" alt="Julia">
+                <h2>Julia</h2>
+                <p>Profesor Encargado de Guiar. Proveedor de orientación y apoyo académico a lo largo de todo el proyecto. Supervisor de la calidad del trabajo realizado. Brindó asesoramiento sobre las mejores prácticas en diseño y desarrollo web. Participó
+                    en sesiones de revisión de código y ofreció sugerencias para mejorar la eficiencia y la legibilidad del código.</p>
+            </div>
+            <div class="credit">
+                <img src="#" alt="Maria">
+                <h2>Maria</h2>
+                <p>Desarrolladora Junior. Colaboró en tareas de codificación y pruebas. Participó en reuniones de equipo y contribuyó con ideas para mejoras en la interfaz de usuario. Además, ayudó en la creación de palabras clave y plantillas para la aplicación,
+                    lo que fue fundamental para mantener una coherencia visual y funcional en todo el proyecto.</p>
+            </div>
+            <div class="credit">
+                <img src="#" alt="Camila">
+                <h2>Camila</h2>
+                <p>Colaboradora en el diseño. Ayudó en la selección de colores y fuentes para el diseño de la página web. Proporcionó comentarios sobre la usabilidad y la accesibilidad. Contribuyó en la elaboración de wireframes y mockups para la iteración
+                    del diseño.</p>
+            </div>
+            <div class="credit">
+                <img src="#" alt="Valentina">
+                <h2>Valentina</h2>
+                <p>Asistente de Desarrollo. Apoyó en la implementación de funcionalidades básicas y en la corrección de errores. Contribuyó en la elaboración de documentación técnica. Realizó pruebas exhaustivas para garantizar la calidad y la estabilidad
+                    del producto final.</p>
+            </div>
+            <div class="credit">
+                <img src="#" alt="Daniela">
+                <h2>Daniela</h2>
+                <p>Proveyó soporte en tareas administrativas y logísticas. Mantuvo la organización de archivos y documentos relacionados con el proyecto. Facilitó la comunicación interna del equipo y gestionó eficientemente las agendas y los recursos.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const canvas = document.getElementById("galaxyCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let stars = [];
+        const numStars = 200;
+        const starSpeed = 0.1;
+
+        function createStars() {
+            for (let i = 0; i < numStars; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 1.5,
+                    speedX: (Math.random() - 0.5) * starSpeed,
+                    speedY: (Math.random() - 0.5) * starSpeed,
+                    alpha: Math.random(),
+                });
+            }
+        }
+
+        function drawStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#fff";
+
+            for (let star of stars) {
+                ctx.globalAlpha = star.alpha;
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+        }
+
+        function updateStars() {
+            for (let star of stars) {
+                star.x += star.speedX;
+                star.y += star.speedY;
+
+                if (star.x < 0 || star.x > canvas.width) {
+                    star.x = Math.random() * canvas.width;
+                }
+                if (star.y < 0 || star.y > canvas.height) {
+                    star.y = Math.random() * canvas.height;
+                }
+
+                star.alpha += (Math.random() - 0.5) * 0.02;
+                star.alpha = Math.max(0, Math.min(1, star.alpha));
+            }
+        }
+
+        function createAsteroids() {
+            for (let i = 0; i < 10; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 4 + 2,
+                    speedX: (Math.random() - 0.5) * starSpeed * 5,
+                    speedY: (Math.random() - 0.5) * starSpeed * 5,
+                    alpha: Math.random(),
+                });
+            }
+        }
+
+        function animateStars() {
+            drawStars();
+            updateStars();
+            requestAnimationFrame(animateStars);
+        }
+
+        createStars();
+        createAsteroids();
+        animateStars();
+
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            stars = [];
+            createStars();
+            createAsteroids();
+        });
+    </script>
+</body>
+
+</html>

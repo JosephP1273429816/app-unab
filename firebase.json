@@ -39,8 +39,8 @@
                 "destination": "/html/registro.html"
             },
             {
-                "source": "/servicios",
-                "destination": "/html/servicios.html"
+                "source": "/creditos",
+                "destination": "/html/creditos.html"
             },
             {
                 "source": "**",

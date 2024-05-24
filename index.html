@@ -14,10 +14,11 @@
 </head>
 
 <body>
+    <canvas id="galaxyCanvas"></canvas>
     <div class="container">
         <header>
             <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Logo Universidad UNAB" id="logo-img" />
+                <img src="img/logo-white.png" alt="Logo Universidad UNAB" id="logo-img" />
             </a>
         </header>
         <main>
@@ -33,15 +34,16 @@
                         <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required />
                     </div>
                     <button type="submit" class="btn-orange">Entrar</button>
-                    <a href="html/registro.html" class="register-link">¿No tienes cuenta?</a
-            >
-            <a href="html/contraseña.html" class="o_contraseña-link"
-              >¿Olvidaste tu contraseña?</a
-            >
-          </form>
-        </div>
-      </main>
+                    <div class="links-container">
+                        <a href="html/registro.html" class="register-link">¿No tienes cuenta?</a>
+                        <a href="html/contraseña.html" class="o_contraseña-link">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
     <script type="module" src="js/login_1.js"></script>
-  </body>
+    <script src="js/fondo.js"></script>
+</body>
+
 </html>

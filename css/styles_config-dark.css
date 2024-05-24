@@ -1,309 +1,352 @@
 /* Estilos generales */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #222222; /* Fondo oscuro */
-  color: #ffffff; /* Color de texto claro */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Color de texto claro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición suave */
 }
 
+
 /* Animación de fade-in para la página */
+
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
 /* Estilos para el encabezado */
+
 header {
-  background-color: #2B2B2B; /* Gris más oscuro */
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2B2B2B;
+    /* Gris más oscuro */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 /* Animación de fade-in para el contenedor principal */
+
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Fondo semitransparente */
-  z-index: 1000;
-  /* Índice z alto para que esté por encima de todo */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    z-index: 1000;
+    /* Índice z alto para que esté por encima de todo */
 }
 
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #121212;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .close {
-  position: absolute;
-  top: 100px;
-  right: 10px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #fff;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
 }
 
 .fade-in {
-  animation: fade-in 1s ease forwards;
+    animation: fade-in 1s ease forwards;
 }
 
 .logo-container {
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .logo img {
-  max-width: 200px;
-  height: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .line {
-  width: 20px; /* Ajustamos el tamaño de las líneas del menú */
-  height: 2px; /* Ajustamos la altura de las líneas del menú */
-  background-color: #ffffff; /* Blanco */
-  margin: 5px;
-  transition: transform 0.3s ease;
+    width: 20px;
+    /* Ajustamos el tamaño de las líneas del menú */
+    height: 2px;
+    /* Ajustamos la altura de las líneas del menú */
+    background-color: #ffffff;
+    /* Blanco */
+    margin: 5px;
+    transition: transform 0.3s ease;
 }
 
 nav {
-  display: flex;
+    display: flex;
 }
 
 .nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-list li a {
-  font-size: large;
-  text-decoration: none;
-  color: #ffffff; /* Texto blanco */
-  transition: color 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+    color: #ffffff;
+    /* Texto blanco */
+    transition: color 0.3s ease;
 }
 
 .nav-list li a:hover,
 .nav-list li a.active {
-  color: #1976D2; /* Azul */
+    color: #1976D2;
+    /* Azul */
 }
 
+
 /* Estilos para los botones de acción */
+
 button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button#guardar-cambios {
-  background-color: #2196F3; /* Color azul */
-  color: #fff;
+    background-color: #2196F3;
+    /* Color azul */
+    color: #fff;
 }
 
 button#guardar-cambios:hover {
-  background-color: #0d8af3; /* Azul más oscuro */
+    background-color: #0d8af3;
+    /* Azul más oscuro */
 }
 
 button#cerrar-sesion {
-  background-color: #dc3545; /* Color rojo */
-  color: #fff;
+    background-color: #dc3545;
+    /* Color rojo */
+    color: #fff;
 }
 
 button#contraseñan:hover {
-  background-color: #bd2130; /* Rojo más oscuro */
+    background-color: #bd2130;
+    /* Rojo más oscuro */
 }
 
 button#contraseña {
-  background-color: #dc3545; /* Color rojo */
-  color: #fff;
+    background-color: #dc3545;
+    /* Color rojo */
+    color: #fff;
 }
 
 button#cerrar-sesion:hover {
-  background-color: #bd2130; /* Rojo más oscuro */
+    background-color: #bd2130;
+    /* Rojo más oscuro */
 }
 
+
 /* Estilos para el interruptor deslizante */
+
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked+.slider {
+    background-color: #2196F3;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
-  transform: translateX(26px);
+input:checked+.slider:before {
+    transform: translateX(26px);
 }
+
 
 /* Estilos para el texto y los títulos */
+
 p {
-  margin-top: 20px;
-  font-size: 18px;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
 h1 {
-  font-size: 24px;
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+
 /* Estilos para el contenedor principal */
+
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .container-opcion {
-  background-color: #2B2B2B; /* Fondo gris oscuro */
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 20px;
-  padding: 10px;
+    background-color: #2B2B2B;
+    /* Fondo gris oscuro */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
+
 /* Estilos para los enlaces */
+
 a {
-  font-size: large;
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
 a:hover,
 a.active {
-  color: #2196F3;
+    color: #2196F3;
 }
 
+
 /* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-  .close{
-    top: 80px;
-  }
-  .logo img {
-    max-width: 150px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
-    margin-left: auto; /* Alinea el botón de menú al final de la derecha */
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background-color: #2B2B2B; /* Fondo sólido sin transparencia */
-    position: absolute;
-    top: 70px; /* Ajustamos la posición de la barra de navegación */
-    right: 0;
-    width: 100%;
-    padding: 20px; /* Aumentar el padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: slide-down 0.3s ease; /* Agregamos animación de slide-down */
-  }
-
-  .nav-list.active {
-    display: flex;
-    justify-content: center; /* Centramos la barra de navegación */
-    align-items: center;
-    z-index: 100;
-  }
-
-  .line {
-    width: 25px; /* Ajustamos el tamaño de las líneas del menú */
-    height: 2px; /* Ajustamos la altura de las líneas del menú */
-    background-color: #ffffff; /* Blanco */
-    margin: 4px; /* Reducimos el margen entre las líneas */
-    transition: transform 0.3s ease;
-  }
+    header {
+        padding: 10px;
+    }
+    .close {
+        top: 80px;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-left: auto;
+        /* Alinea el botón de menú al final de la derecha */
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #2B2B2B;
+        /* Fondo sólido sin transparencia */
+        position: absolute;
+        top: 70px;
+        /* Ajustamos la posición de la barra de navegación */
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        /* Aumentar el padding */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: slide-down 0.3s ease;
+        /* Agregamos animación de slide-down */
+    }
+    .nav-list.active {
+        display: flex;
+        justify-content: center;
+        /* Centramos la barra de navegación */
+        align-items: center;
+        z-index: 100;
+    }
+    .line {
+        width: 25px;
+        /* Ajustamos el tamaño de las líneas del menú */
+        height: 2px;
+        /* Ajustamos la altura de las líneas del menú */
+        background-color: #ffffff;
+        /* Blanco */
+        margin: 4px;
+        /* Reducimos el margen entre las líneas */
+        transition: transform 0.3s ease;
+    }
 }
 
 @keyframes slide-down {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
