@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Contador de volteos
     var volteos = 0;
     // Número deseado de volteos para abrir otro HTML
-    var volteosDeseados = 2; // Puedes ajustar este número según lo necesites
+    var volteosDeseados = 10; // Puedes ajustar este número según lo necesites
 
     profileCard.addEventListener("click", function() {
         profileCard.classList.toggle("flipped"); // Voltear el carnet al hacer clic

@@ -2,15 +2,18 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad UNAB</title>
-    <link rel="preload" href="css/login-dark.css" as="style" />
-    <link rel="preload" href="css/login.css" as="style" />
-    <link rel="stylesheet" href="css/login.css" id="mapa-css" />
-    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
-    <script src="js/firebase-config.js"></script>
+    <link rel="preload" href="css/login-dark.css" as="style">
+    <link rel="preload" href="css/login.css" as="style">
+    <link rel="preload" href="css/fondo.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" as="style">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js" defer></script>
+    <script src="js/firebase-config.js" defer></script>
 </head>
 
 <body>
@@ -18,20 +21,20 @@
     <div class="container">
         <header>
             <a href="index.html" class="logo">
-                <img src="img/logo-white.png" alt="Logo Universidad UNAB" id="logo-img" />
+                <img src="img/logo.png" alt="Logo Universidad UNAB" id="logo-img">
             </a>
         </header>
         <main>
             <div class="login-form active">
-                <h2>Iniciar sesión</h2>
+                <h1>Iniciar sesión</h1>
                 <form id="loginForm">
                     <div class="form-group">
                         <label for="id"></label>
-                        <input type="text" id="id" name="id" placeholder="Ingrese su correo" required />
+                        <input type="text" id="id" name="id" placeholder="Ingrese su correo" required>
                     </div>
                     <div class="form-group">
                         <label for="password"></label>
-                        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required />
+                        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
                     </div>
                     <button type="submit" class="btn-orange">Entrar</button>
                     <div class="links-container">
@@ -43,7 +46,6 @@
         </main>
     </div>
     <script type="module" src="js/login_1.js"></script>
-    <script src="js/fondo.js"></script>
 </body>
 
 </html>

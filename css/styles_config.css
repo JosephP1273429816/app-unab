@@ -1,344 +1,339 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Estilos generales */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2; /* Fondo gris claro */
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-color 0.3s ease;
-  animation: fade-in 0.5s ease-in-out; /* Agregamos animación de fade-in */
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    animation: fade-in 0.5s ease-in-out;
 }
-/* Estilos para el encabezado */
+
 header {
-  background-color: white;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-/* Animación de fade-in para el contenedor principal */
+
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .close {
-  position: absolute;
-  top: 100px;
-  right: 10px;
-  font-size: 28px;
-  cursor: pointer;
-  color: black; /* Cambia el color según tu diseño */
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
 }
 
 .fade-in {
-  animation: fade-in 1s ease forwards;
+    animation: fade-in 1s ease forwards;
 }
 
 .logo-container {
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .logo img {
-  max-width: 200px;
-  height: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .line {
-  width: 20px; /* Ajustamos el tamaño de las líneas del menú */
-  height: 2px; /* Ajustamos la altura de las líneas del menú */
-  background-color: #333;
-  margin: 5px;
-  transition: transform 0.3s ease;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px;
+    transition: transform 0.3s ease;
 }
 
 nav {
-  display: flex;
+    display: flex;
 }
 
 .nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-list li a {
-  font-size: large;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 .nav-list li a:hover,
 .nav-list li a.active {
-  color: #ff9800;
+    color: #ff9800;
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .logo-container {
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .logo img {
-  max-width: 200px;
-  height: auto;
+    max-width: 200px;
+    height: auto;
 }
-
-
 
 nav {
-  display: flex;
+    display: flex;
 }
 
-/* Estilos para el botón de guardar cambios */
 button#guardar-cambios {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #ff9800; /* Azul */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button#guardar-cambios:hover {
-  background-color: #ca7900; /* Azul más oscuro al pasar el ratón */
+    background-color: #ca7900;
 }
+
 button#contraseñan:hover {
-  background-color: #bd2130; /* Rojo más oscuro */
+    background-color: #bd2130;
 }
 
 button#contraseña {
-  background-color: #dc3545; /* Color rojo */
-  color: #fff;
+    background-color: #dc3545;
+    color: #fff;
 }
 
-/* Estilos para el botón de cerrar sesión */
 button#cerrar-sesion {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #dc3545; /* Rojo */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
 }
 
 button#cerrar-sesion:hover {
-  background-color: #bd2130; /* Rojo más oscuro al pasar el ratón */
+    background-color: #bd2130;
 }
 
-/* Estilos para el botón deslizante */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #ff9800; /* Azul */
+input:checked+.slider {
+    background-color: #ff9800;
+    /* Azul */
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #ff9800; /* Azul al enfocar */
+input:focus+.slider {
+    box-shadow: 0 0 1px #ff9800;
 }
 
-input:checked + .slider:before {
-  transform: translateX(26px);
+input:checked+.slider:before {
+    transform: translateX(26px);
 }
 
-/* Estilos para el texto "Activar modo oscuro" */
 p {
-  margin-top: 20px;
-  font-size: 18px;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-/* Estilos para el título "Configuraciones" */
 h1 {
-  font-size: 24px;
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .container {
-  max-width: 800px;
-  margin: 20px auto; /* Margen arriba y abajo, centrado verticalmente */
-  padding: 0 20px;
-  margin-left: auto; /* Margen a la izquierda, centrado horizontalmente */
-  margin-right: auto; /* Margen a la derecha, centrado horizontalmente */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .container-opcion {
-  background-color: #ffffff; /* Fondo blanco */
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 20px;
-  padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 a {
-  font-size: large;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 a:hover,
 a.active {
-  color: #ff9800;
+    color: #ff9800;
 }
-/* Estilos para dispositivos móviles */
+
 @media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-  .close {
-    top: 100px;
-  }
-  .logo img {
-    max-width: 150px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
-    margin-left: auto; /* Alinea el botón de menú al final de la derecha */
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 1); /* Fondo sólido sin transparencia */
-    position: absolute;
-    top: 70px; /* Ajustamos la posición de la barra de navegación */
-    right: 0;
-    width: 100%;
-    padding: 20px; /* Aumentar el padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: slide-down 0.3s ease; /* Agregamos animación de slide-down */
-  }
-
-  .nav-list.active {
-    display: flex;
-    justify-content: center; /* Centramos la barra de navegación */
-    align-items: center;
-    z-index: 100;
-  }
-
-  .line {
-    width: 25px; /* Ajustamos el tamaño de las líneas del menú */
-    height: 2px; /* Ajustamos la altura de las líneas del menú */
-    background-color: #333;
-    margin: 4px; /* Reducimos el margen entre las líneas */
-    transition: transform 0.3s ease;
-  }
-  header {
-    padding: 10px;
-  }
-
-  .logo img {
-    max-width: 150px;
-  }
+    header {
+        padding: 10px;
+    }
+    .close {
+        top: 100px;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-left: auto;
+        /
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 1);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        /* Aumentar el padding */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: slide-down 0.3s ease;
+    }
+    .nav-list.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .line {
+        width: 25px;
+        height: 2px;
+        background-color: #333;
+        margin: 4px;
+        transition: transform 0.3s ease;
+    }
+    header {
+        padding: 10px;
+    }
+    .logo img {
+        max-width: 150px;
+    }
 }
 
 @keyframes slide-down {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

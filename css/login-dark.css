@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-
-/* Utilizamos la fuente Roboto para todo el texto */
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #0c0c0c;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -18,12 +16,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle at 20% 20%, #000, #0b71c5, #000, #2196F3, #000, #045da5, #014985);
-    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
-
-/* Lienzo para el fondo animado */
+#galaxyCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 #galaxyCanvas {
     position: absolute;
@@ -49,21 +55,18 @@ body {
 }
 
 .container {
+    text-align: center;
     width: 90%;
-    /* Cambiamos el ancho a un porcentaje */
     max-width: 400px;
     padding: 30px;
-    /* Aumentamos el margen interno */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Animación de entrada suave */
+    background-color: rgba(19, 19, 19, 0.548);
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     opacity: 0;
-    /* Comienza con opacidad cero */
 }
 
 @keyframes slideIn {
@@ -77,16 +80,10 @@ body {
     }
 }
 
-
-/* Estilo para el encabezado centrado */
-
 header {
     text-align: center;
     margin-bottom: 20px;
 }
-
-
-/* Estilo para el logotipo */
 
 img {
     max-width: 100%;
@@ -94,24 +91,16 @@ img {
     margin-bottom: 20px;
 }
 
-
-/* Estilo para el título */
-
+h1,
 h2 {
     font-size: 24px;
     color: #fff;
     margin-bottom: 10px;
 }
 
-
-/* Estilo para los formularios */
-
 form {
     margin-bottom: 20px;
 }
-
-
-/* Estilo para los campos de entrada y botón */
 
 input[type="text"],
 input[type="email"],

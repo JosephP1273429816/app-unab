@@ -1,228 +1,217 @@
-/* Estilos generales */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #222222; /* Fondo gris oscuro */
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-color 0.3s ease;
-  animation: fade-in 0.5s ease-in-out; /* Agregamos animación de fade-in */
-  color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+    animation: fade-in 0.5s ease-in-out;
+    color: #ffffff;
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* Estilos para el encabezado */
 header {
-  background-color: #2B2B2B; /* Gris más oscuro */
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2B2B2B;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo-container {
-  margin-right: auto;
+    margin-right: auto;
 }
 
 .logo img {
-  max-width: 200px;
-  height: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .line {
-  width: 20px; /* Ajustamos el tamaño de las líneas del menú */
-  height: 2px; /* Ajustamos la altura de las líneas del menú */
-  background-color: #ffffff; /* Blanco */
-  margin: 5px;
-  transition: transform 0.3s ease;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: transform 0.3s ease;
 }
 
 nav {
-  display: flex;
+    display: flex;
 }
 
 .nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-list li a {
-  font-size: large;
-  text-decoration: none;
-  color: #ffffff; /* Texto blanco */
-  transition: color 0.3s ease;
+    font-size: large;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
 }
 
 .nav-list li a:hover,
 .nav-list li a.active {
-  color: #1976D2; /* Azul */
+    color: #1976D2;
 }
 
-/* Estilos para la galería de fotos */
 .photo-gallery {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  overflow: hidden;
-  margin: 20px auto;
-  border: 2px solid #ccc; /* Añade un borde si lo deseas */
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 2px solid #ccc;
 }
 
 .gallery-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
 }
 
 .gallery-image.active {
-  opacity: 1;
+    opacity: 1;
 }
 
-/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-
-  .logo img {
-    max-width: 150px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
-    margin-left: auto; /* Alinea el botón de menú al final de la derecha */
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background-color: #2B2B2B;
-    position: absolute;
-    top: 70px; /* Ajustamos la posición de la barra de navegación */
-    right: 0;
-    width: 100%;
-    padding: 20px; /* Aumentar el padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    animation: slide-down 0.3s ease; /* Agregamos animación de slide-down */
-  }
-
-  .nav-list.active {
-    display: flex;
-    justify-content: center; /* Centramos la barra de navegación */
-    align-items: center;
-    z-index: 100;
-  }
-
-  .line {
-    width: 25px; /* Ajustamos el tamaño de las líneas del menú */
-    height: 2px; /* Ajustamos la altura de las líneas del menú */
-    background-color: #ffffff; /* Blanco */
-    margin: 4px; /* Reducimos el margen entre las líneas */
-    transition: transform 0.3s ease;
-  }
+    header {
+        padding: 10px;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        margin-left: auto;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #2B2B2B;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: slide-down 0.3s ease;
+    }
+    .nav-list.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .line {
+        width: 25px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 4px;
+        transition: transform 0.3s ease;
+    }
 }
 
 @keyframes slide-down {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .posts-container {
-  max-width: 800px;
-  margin: 20px auto; /* Margen arriba y abajo, centrado verticalmente */
-  padding: 0 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/* Estilos para los posts */
 .post {
-  background-color: #2B2B2B; /* Fondo gris más oscuro */
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 20px;
-  padding: 20px; /* Espacio interno */
-  color: #ffffff; /* Texto blanco */
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #ffffff;
 }
 
 .post-header {
-  display: flex;
-  align-items: center;
-  padding-bottom: 10px; /* Espacio entre encabezado y contenido */
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .post-header img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; /* Imagen redonda */
-  margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .post-header h3 {
-  margin: 0;
-  font-size: 1.2em;
+    margin: 0;
+    font-size: 1.2em;
 }
 
 .post-content {
-  padding: 10px 0; /* Espacio interno del contenido */
+    padding: 10px 0;
 }
 
 .post-content p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .post-footer {
-  padding-top: 10px; /* Espacio entre contenido y pie de página */
-  border-top: 1px solid #7D7F7D; /* Borde superior gris claro */
-  display: flex;
-  justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #7D7F7D;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Estilos mejorados para los botones */
 .post-footer button {
-  background-color: #1976D2; /* Azul */
-  border: 1px solid #1976D2; /* Borde del mismo color */
-  border-radius: 20px;
-  padding: 8px 16px;
-  color: #ffffff; /* Texto blanco */
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #1976D2;
+    border: 1px solid #1976D2;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .post-footer button:hover {
-  background-color: #1565C0; /* Azul más oscuro al pasar el cursor */
+    background-color: #1565C0;
 }

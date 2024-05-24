@@ -1,5 +1,3 @@
-/* Estilos generales */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #222222;
-    /* Fondo oscuro */
     color: #ffffff;
-    /* Color de texto claro */
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Transición suave */
 }
-
-
-/* Animación de fade-in para la página */
 
 @keyframes fade-in {
     from {
@@ -28,12 +20,8 @@ body {
     }
 }
 
-
-/* Estilos para el encabezado */
-
 header {
     background-color: #2B2B2B;
-    /* Gris más oscuro */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -41,9 +29,6 @@ header {
     align-items: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-
-/* Animación de fade-in para el contenedor principal */
 
 @keyframes fade-in {
     from {
@@ -62,9 +47,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
     z-index: 1000;
-    /* Índice z alto para que esté por encima de todo */
 }
 
 .modal-content {
@@ -108,11 +91,8 @@ header {
 
 .line {
     width: 20px;
-    /* Ajustamos el tamaño de las líneas del menú */
     height: 2px;
-    /* Ajustamos la altura de las líneas del menú */
     background-color: #ffffff;
-    /* Blanco */
     margin: 5px;
     transition: transform 0.3s ease;
 }
@@ -131,64 +111,50 @@ nav {
     font-size: large;
     text-decoration: none;
     color: #ffffff;
-    /* Texto blanco */
     transition: color 0.3s ease;
 }
 
 .nav-list li a:hover,
 .nav-list li a.active {
     color: #1976D2;
-    /* Azul */
 }
-
-
-/* Estilos para los botones de acción */
 
 button {
     margin-top: 10px;
     padding: 8px 16px;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button#guardar-cambios {
     background-color: #2196F3;
-    /* Color azul */
     color: #fff;
 }
 
 button#guardar-cambios:hover {
     background-color: #0d8af3;
-    /* Azul más oscuro */
 }
 
 button#cerrar-sesion {
     background-color: #dc3545;
-    /* Color rojo */
     color: #fff;
 }
 
 button#contraseñan:hover {
     background-color: #bd2130;
-    /* Rojo más oscuro */
 }
 
 button#contraseña {
     background-color: #dc3545;
-    /* Color rojo */
     color: #fff;
 }
 
 button#cerrar-sesion:hover {
     background-color: #bd2130;
-    /* Rojo más oscuro */
 }
-
-
-/* Estilos para el interruptor deslizante */
 
 .switch {
     position: relative;
@@ -239,9 +205,6 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
-/* Estilos para el texto y los títulos */
-
 p {
     margin-top: 20px;
     font-size: 18px;
@@ -252,9 +215,6 @@ h1 {
     font-weight: bold;
 }
 
-
-/* Estilos para el contenedor principal */
-
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -262,16 +222,11 @@ h1 {
 
 .container-opcion {
     background-color: #2B2B2B;
-    /* Fondo gris oscuro */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
     margin-bottom: 20px;
     padding: 10px;
 }
-
-
-/* Estilos para los enlaces */
 
 a {
     font-size: large;
@@ -284,9 +239,6 @@ a:hover,
 a.active {
     color: #2196F3;
 }
-
-
-/* Estilos para dispositivos móviles */
 
 @media (max-width: 768px) {
     header {
@@ -304,40 +256,29 @@ a.active {
         justify-content: flex-end;
         padding: 10px;
         margin-left: auto;
-        /* Alinea el botón de menú al final de la derecha */
     }
     .nav-list {
         display: none;
         flex-direction: column;
         background-color: #2B2B2B;
-        /* Fondo sólido sin transparencia */
         position: absolute;
         top: 70px;
-        /* Ajustamos la posición de la barra de navegación */
         right: 0;
         width: 100%;
-        padding: 20px;
-        /* Aumentar el padding */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         animation: slide-down 0.3s ease;
-        /* Agregamos animación de slide-down */
     }
     .nav-list.active {
         display: flex;
         justify-content: center;
-        /* Centramos la barra de navegación */
         align-items: center;
         z-index: 100;
     }
     .line {
         width: 25px;
-        /* Ajustamos el tamaño de las líneas del menú */
         height: 2px;
-        /* Ajustamos la altura de las líneas del menú */
         background-color: #ffffff;
-        /* Blanco */
         margin: 4px;
-        /* Reducimos el margen entre las líneas */
         transition: transform 0.3s ease;
     }
 }

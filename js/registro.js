@@ -104,7 +104,7 @@ function activarModoOscuro() {
 
         function drawStars() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#ffffff";
+            ctx.fillStyle = "#2196F3";
 
             for (let star of stars) {
                 ctx.globalAlpha = star.alpha;

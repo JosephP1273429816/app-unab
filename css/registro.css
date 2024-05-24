@@ -1,5 +1,3 @@
-/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +8,10 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background: linear-gradient(135deg, #8ac7d0, #f6b084, #d3d8e2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -17,8 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    animation: fadeIn 1s ease forwards;
 }
 
 #galaxyCanvas {
@@ -28,6 +29,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
 }
 
 @keyframes fadeIn {
@@ -45,7 +51,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(255, 255, 255, 0.445);
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;
@@ -70,38 +76,34 @@ header {
 }
 
 #registerForm select option {
-    color: #333;
-    background-color: #fff;
-    /* Fondo blanco */
+    color: black;
     font-family: Arial, sans-serif;
-    /* Familia de fuente */
     font-size: 16px;
 }
 
-img {
-    max-width: 200px;
-    height: auto;
+select option {
+    background-color: rgba(100, 100, 100, 0.3);
 }
 
+optgroup {
+    background-color: rgba(100, 100, 100, 0.3);
+}
 
-/* Estilo para el título */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
 h2 {
-    text-align: center;
     font-size: 24px;
-    color: white;
+    color: #333;
     margin-bottom: 10px;
 }
-
-
-/* Estilo para los formularios */
 
 form {
     margin-bottom: 20px;
 }
-
-
-/* Estilo para los campos de entrada y botón */
 
 input[type="text"],
 input[type="email"],
@@ -111,30 +113,23 @@ button,
 select {
     width: 100%;
     padding: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc;
     border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     margin-bottom: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-input::placeholder {
-    color: black;
-}
-
 button,
 .boton {
-    background-color: #ffffff;
-    color: black;
+    background-color: #ff9800;
+    color: #fff;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
 }
-
-
-/* Estilo para los enlaces */
 
 .register-link,
 .o_contraseña-link {
@@ -147,17 +142,13 @@ button,
     transition: background-color 0.3s ease;
 }
 
-
-/* Estilo para los enlaces al pasar el cursor */
-
 .register-link:hover,
 .o_contraseña-link:hover {
     background-color: #e0e0e0;
-    /* Cambia el color al pasar el cursor */
 }
 
 button:hover {
-    background-color: #cecece;
+    background-color: #dd8604;
     transform: scale(1.05);
 }
 

@@ -1,18 +1,14 @@
-/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* Utilizamos la fuente Roboto para todo el texto */
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #0c0c0c;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -20,12 +16,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle at 20% 20%, #000, #0b71c5, #000, #2196F3, #000, #045da5, #014985);
-    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
-
-/* Lienzo para el fondo animado */
+#galaxyCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 #galaxyCanvas {
     position: absolute;
@@ -51,21 +55,18 @@ body {
 }
 
 .container {
+    text-align: center;
     width: 90%;
-    /* Cambiamos el ancho a un porcentaje */
     max-width: 400px;
     padding: 30px;
-    /* Aumentamos el margen interno */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Animación de entrada suave */
+    background-color: rgba(19, 19, 19, 0.548);
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     opacity: 0;
-    /* Comienza con opacidad cero */
 }
 
 @keyframes slideIn {
@@ -87,9 +88,7 @@ header {
 #registerForm select option {
     color: #333;
     background-color: #fff;
-    /* Fondo blanco */
     font-family: Arial, sans-serif;
-    /* Familia de fuente */
     font-size: 16px;
 }
 
@@ -99,24 +98,15 @@ img {
     margin-bottom: 20px;
 }
 
-
-/* Estilo para el título */
-
 h2 {
     font-size: 24px;
     color: #fff;
     margin-bottom: 10px;
 }
 
-
-/* Estilo para los formularios */
-
 form {
     margin-bottom: 20px;
 }
-
-
-/* Estilo para los campos de entrada y botón */
 
 input[type="text"],
 input[type="email"],
@@ -149,9 +139,6 @@ button,
     font-weight: bold;
 }
 
-
-/* Estilo para los enlaces */
-
 .register-link,
 .o_contraseña-link {
     display: inline-block;
@@ -163,57 +150,33 @@ button,
     transition: background-color 0.3s ease;
 }
 
-
-/* Estilo para los enlaces al pasar el cursor */
-
 .register-link:hover,
 .o_contraseña-link:hover {
     background-color: #e0e0e0;
-    /* Cambia el color al pasar el cursor */
 }
-
-
-/* Estilo para los botones al pasar el cursor */
 
 button:hover {
     background-color: #005da8;
-    /* Cambia el color al pasar el cursor */
     transform: scale(1.05);
-    /* Aumenta el tamaño del botón */
 }
-
-
-/* Estilos para los campos ID y contraseña */
 
 .form-group.id-contrasena {
     display: flex;
-    /* Activa flexbox dentro del grupo */
     flex-direction: row;
-    /* Coloca los elementos en fila */
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     margin-bottom: 15px;
-    /* Espacio entre campos */
     gap: 10px;
-    /* Espacio entre campos de entrada */
 }
 
 .form-group.id-contrasena label {
     flex: 0 0 25%;
-    /* Ancho fijo para la etiqueta */
     text-align: right;
-    /* Alinea la etiqueta a la derecha */
     padding-right: 10px;
-    /* Espacio entre la etiqueta y el campo de entrada */
 }
 
 .form-group.id-contrasena input {
     flex: 1;
-    /* El campo de entrada ocupa el espacio restante */
     padding: 8px;
-    /* Espacio dentro del campo de entrada */
     border: 1px solid #ccc;
-    /* Borde gris claro */
     border-radius: 5px;
-    /* Esquinas redondeadas */
 }

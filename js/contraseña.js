@@ -2,6 +2,7 @@
 var firebaseConfig = {
     apiKey: "AIzaSyBqfaryp-wOILMxTiBM1tz3ZNUUwWN_T7s",
     authDomain: "miunab.firebaseapp.com",
+    databaseURL: "https://miunab-default-rtdb.firebaseio.com",
     projectId: "miunab",
     storageBucket: "miunab.appspot.com",
     messagingSenderId: "372715988870",
@@ -35,89 +36,7 @@ function activarModoOscuro() {
     document.body.classList.add("dark-mode");
     const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
     if (link) {
-        link.href = "/css/login-dark.css";
-        const canvas = document.getElementById("galaxyCanvas");
-        const ctx = canvas.getContext("2d");
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let stars = [];
-        const numStars = 200;
-        const starSpeed = 0.1;
-
-        function createStars() {
-            for (let i = 0; i < numStars; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 1.5,
-                    speedX: (Math.random() - 0.5) * starSpeed,
-                    speedY: (Math.random() - 0.5) * starSpeed,
-                    alpha: Math.random(),
-                });
-            }
-        }
-
-        function drawStars() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#ffffff";
-
-            for (let star of stars) {
-                ctx.globalAlpha = star.alpha;
-                ctx.beginPath();
-                ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
-                ctx.fill();
-            }
-        }
-
-        function updateStars() {
-            for (let star of stars) {
-                star.x += star.speedX;
-                star.y += star.speedY;
-
-                if (star.x < 0 || star.x > canvas.width) {
-                    star.x = Math.random() * canvas.width;
-                }
-                if (star.y < 0 || star.y > canvas.height) {
-                    star.y = Math.random() * canvas.height;
-                }
-
-                star.alpha += (Math.random() - 0.5) * 0.02;
-                star.alpha = Math.max(0, Math.min(1, star.alpha));
-            }
-        }
-
-        function createAsteroids() {
-            for (let i = 0; i < 10; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 4 + 2,
-                    speedX: (Math.random() - 0.5) * starSpeed * 5,
-                    speedY: (Math.random() - 0.5) * starSpeed * 5,
-                    alpha: Math.random(),
-                });
-            }
-        }
-
-        function animateStars() {
-            drawStars();
-            updateStars();
-            requestAnimationFrame(animateStars);
-        }
-
-        createStars();
-        createAsteroids();
-        animateStars();
-
-        window.addEventListener("resize", () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            stars = [];
-            createStars();
-            createAsteroids();
-        });
+        link.href = "/css/login-dark.css"; // Establecer el enlace al modo oscuro
     }
     localStorage.setItem("darkMode", "true"); // Guardar el estado del modo oscuro
     const logoImg = document.getElementById("logo-img");
@@ -132,89 +51,7 @@ function activarModoClaro() {
     document.body.classList.remove("dark-mode");
     const link = document.querySelector("link#mapa-css"); // Seleccionar el enlace por su ID
     if (link) {
-        link.href = "/css/login.css";
-        const canvas = document.getElementById("galaxyCanvas");
-        const ctx = canvas.getContext("2d");
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let stars = [];
-        const numStars = 200;
-        const starSpeed = 0.1;
-
-        function createStars() {
-            for (let i = 0; i < numStars; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 1.5,
-                    speedX: (Math.random() - 0.5) * starSpeed,
-                    speedY: (Math.random() - 0.5) * starSpeed,
-                    alpha: Math.random(),
-                });
-            }
-        }
-
-        function drawStars() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#fff";
-
-            for (let star of stars) {
-                ctx.globalAlpha = star.alpha;
-                ctx.beginPath();
-                ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
-                ctx.fill();
-            }
-        }
-
-        function updateStars() {
-            for (let star of stars) {
-                star.x += star.speedX;
-                star.y += star.speedY;
-
-                if (star.x < 0 || star.x > canvas.width) {
-                    star.x = Math.random() * canvas.width;
-                }
-                if (star.y < 0 || star.y > canvas.height) {
-                    star.y = Math.random() * canvas.height;
-                }
-
-                star.alpha += (Math.random() - 0.5) * 0.02;
-                star.alpha = Math.max(0, Math.min(1, star.alpha));
-            }
-        }
-
-        function createAsteroids() {
-            for (let i = 0; i < 10; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 4 + 2,
-                    speedX: (Math.random() - 0.5) * starSpeed * 5,
-                    speedY: (Math.random() - 0.5) * starSpeed * 5,
-                    alpha: Math.random(),
-                });
-            }
-        }
-
-        function animateStars() {
-            drawStars();
-            updateStars();
-            requestAnimationFrame(animateStars);
-        }
-
-        createStars();
-        createAsteroids();
-        animateStars();
-
-        window.addEventListener("resize", () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            stars = [];
-            createStars();
-            createAsteroids();
-        });
+        link.href = "/css/login.css"; // Establecer el enlace al modo claro
     }
     localStorage.setItem("darkMode", "false"); // Guardar el estado del modo claro
 }

@@ -2,12 +2,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Universidad UNAB</title>
-    <link rel="preload" href="/css/registro-dark.css" as="style" />
-    <link rel="preload" href="/css/registro.css" as="style" />
-    <link rel="stylesheet" href="/css/registro.css" id="mapa-css" />
+    <link rel="preload" href="/css/registro-dark.css" as="style">
+    <link rel="preload" href="/css/registro.css" as="style">
+    <link rel="stylesheet" href="/css/registro.css" id="mapa-css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <div class="container">
         <header>
             <a href="/index.html" class="logo">
-                <img src="/img/logo-white.png" alt="Logo Universidad UNAB" id="logo-img" />
+                <img src="/img/logo.png" alt="Logo Universidad UNAB" id="logo-img">
             </a>
         </header>
         <main>
@@ -24,136 +24,122 @@
                 <form id="registerForm">
                     <div class="form-group">
                         <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required />
+                        <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required>
                     </div>
                     <div class="form-group">
                         <label for="id"></label>
-                        <input type="text" id="id" name="id" placeholder="Ingrese su id (U00000000)" required />
+                        <input type="text" id="id" name="id" placeholder="Ingrese su id (U00000000)" required>
                     </div>
                     <div class="form-group">
                         <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required />
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
                     </div>
                     <div class="form-group">
                         <label for="password"></label>
-                        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required />
+                        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
                     </div>
                     <div class="form-group">
                         <label for="confirmPassword"></label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña" required />
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme su contraseña" required>
                     </div>
                     <div class="form-group">
                         <label for="carrera"></label>
                         <select id="carrera" name="carrera" required>
-                <option value="" disabled selected>
-                  Seleccione su carrera
-                </option>
-                <optgroup label="Facultad de Estudios Técnicos y Tecnológicos">
-                  <option
-                    value="Tecnología en Dirección Comercial (virtual y presencial)"
-                  >
-                    Tecnología en Dirección Comercial (virtual y presencial)
-                  </option>
-                  <option
-                    value="Tecnología en Gestión Gastronómica (virtual dual)"
-                  >
-                    Tecnología en Gestión Gastronómica (virtual dual)
-                  </option>
-                  <option value="Tecnología en Gestión Humana (dual)">
-                    Tecnología en Gestión Humana (dual)
-                  </option>
-                  <option
-                    value="Tecnología en Investigación Criminal y Ciencias Forenses"
-                  >
-                    Tecnología en Investigación Criminal y Ciencias Forenses
-                  </option>
-                  <option value="Tecnología en Logística y Mercadeo">
-                    Tecnología en Logística y Mercadeo
-                  </option>
-                  <option value="Tecnología en Regencia de Farmacia (virtual)">
-                    Tecnología en Regencia de Farmacia (virtual)
-                  </option>
-                  <option
-                    value="Tecnología en Seguridad y Salud en el Trabajo (virtual)"
-                  >
-                    Tecnología en Seguridad y Salud en el Trabajo (virtual)
-                  </option>
-                </optgroup>
-                <optgroup
-                  label="Facultad de Ciencias Económicas, Administrativas y Contables"
-                >
-                  <option
-                    value="Administración de Empresas modalidades presencial, virtual y dual"
-                  >
-                    Administración de Empresas modalidades presencial, virtual y
-                    dual
-                  </option>
-                  <option value="Contaduría Pública (virtual y dual)">
-                    Contaduría Pública (virtual y dual)
-                  </option>
-                  <option value="Negocios Internacionales">
-                    Negocios Internacionales
-                  </option>
-                  <option value="Administración Turística y Hotelera">
-                    Administración Turística y Hotelera
-                  </option>
-                  <option value="Economía">Economía</option>
-                  <option value="Seguridad y Salud en el Trabajo (virtual)">
-                    Seguridad y Salud en el Trabajo (virtual)
-                  </option>
-                </optgroup>
-                <optgroup label="Facultad de Ciencias Jurídicas y Políticas">
-                  <option value="Derecho">Derecho</option>
-                </optgroup>
-                <optgroup label="Facultad de Ingenierías">
-                  <option value="Ingeniería en Energía">
-                    Ingeniería en Energía
-                  </option>
-                  <option value="Ingeniería Mecatrónica">
-                    Ingeniería Mecatrónica
-                  </option>
-                  <option value="Ingeniería de Mercados">
-                    Ingeniería de Mercados
-                  </option>
-                  <option value="Ingeniería Financiera">
-                    Ingeniería Financiera
-                  </option>
-                  <option value="Ingeniería Biomédica">
-                    Ingeniería Biomédica
-                  </option>
-                  <option value="Ingeniería Industrial">
-                    Ingeniería Industrial
-                  </option>
-                  <option value="Ingeniería de Sistemas">
-                    Ingeniería de Sistemas
-                  </option>
-                </optgroup>
-                <optgroup label="Facultad de Ciencias de la Salud">
-                  <option value="Enfermería">Enfermería</option>
-                  <option value="Medicina">Medicina</option>
-                  <option value="Psicología">Psicología</option>
-                </optgroup>
-                <optgroup
-                  label="Facultad de Ciencias Sociales, Humanidades y Artes"
-                >
-                  <option value="Artes Audiovisuales">
-                    Artes Audiovisuales
-                  </option>
-                  <option value="Gastronomía y Alta Cocina">
-                    Gastronomía y Alta Cocina
-                  </option>
-                  <option value="Música">Música</option>
-                  <option value="Comunicación Social">
-                    Comunicación Social
-                  </option>
-                  <option value="Licenciatura en Educación Infantil">
-                    Licenciatura en Educación Infantil
-                  </option>
-                  <option value="Literatura (virtual)">
-                    Literatura (virtual)
-                  </option>
-                </optgroup>
-              </select>
+                                <option value="" disabled selected>
+                                    Seleccione su carrera
+                                </option>
+                                <optgroup label="Facultad de Estudios Técnicos y Tecnológicos">
+                                    <option value="Tecnología en Dirección Comercial (virtual y presencial)">
+                                        Tecnología en Dirección Comercial (virtual y presencial)
+                                    </option>
+                                    <option value="Tecnología en Gestión Gastronómica (virtual dual)">
+                                        Tecnología en Gestión Gastronómica (virtual dual)
+                                    </option>
+                                    <option value="Tecnología en Gestión Humana (dual)">
+                                        Tecnología en Gestión Humana (dual)
+                                    </option>
+                                    <option value="Tecnología en Investigación Criminal y Ciencias Forenses">
+                                        Tecnología en Investigación Criminal y Ciencias Forenses
+                                    </option>
+                                    <option value="Tecnología en Logística y Mercadeo">
+                                        Tecnología en Logística y Mercadeo
+                                    </option>
+                                    <option value="Tecnología en Regencia de Farmacia (virtual)">
+                                        Tecnología en Regencia de Farmacia (virtual)
+                                    </option>
+                                    <option value="Tecnología en Seguridad y Salud en el Trabajo (virtual)">
+                                        Tecnología en Seguridad y Salud en el Trabajo (virtual)
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Facultad de Ciencias Económicas, Administrativas y Contables">
+                                    <option value="Administración de Empresas modalidades presencial, virtual y dual">
+                                        Administración de Empresas modalidades presencial, virtual y
+                  dual
+                                    </option>
+                                    <option value="Contaduría Pública (virtual y dual)">
+                                        Contaduría Pública (virtual y dual)
+                                    </option>
+                                    <option value="Negocios Internacionales">
+                                        Negocios Internacionales
+                                    </option>
+                                    <option value="Administración Turística y Hotelera">
+                                        Administración Turística y Hotelera
+                                    </option>
+                                    <option value="Economía">Economía</option>
+                                    <option value="Seguridad y Salud en el Trabajo (virtual)">
+                                        Seguridad y Salud en el Trabajo (virtual)
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Facultad de Ciencias Jurídicas y Políticas">
+                                    <option value="Derecho">Derecho</option>
+                                </optgroup>
+                                <optgroup label="Facultad de Ingenierías">
+                                    <option value="Ingeniería en Energía">
+                                        Ingeniería en Energía
+                                    </option>
+                                    <option value="Ingeniería Mecatrónica">
+                                        Ingeniería Mecatrónica
+                                    </option>
+                                    <option value="Ingeniería de Mercados">
+                                        Ingeniería de Mercados
+                                    </option>
+                                    <option value="Ingeniería Financiera">
+                                        Ingeniería Financiera
+                                    </option>
+                                    <option value="Ingeniería Biomédica">
+                                        Ingeniería Biomédica
+                                    </option>
+                                    <option value="Ingeniería Industrial">
+                                        Ingeniería Industrial
+                                    </option>
+                                    <option value="Ingeniería de Sistemas">
+                                        Ingeniería de Sistemas
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Facultad de Ciencias de la Salud">
+                                    <option value="Enfermería">Enfermería</option>
+                                    <option value="Medicina">Medicina</option>
+                                    <option value="Psicología">Psicología</option>
+                                </optgroup>
+                                <optgroup label="Facultad de Ciencias Sociales, Humanidades y Artes">
+                                    <option value="Artes Audiovisuales">
+                                        Artes Audiovisuales
+                                    </option>
+                                    <option value="Gastronomía y Alta Cocina">
+                                        Gastronomía y Alta Cocina
+                                    </option>
+                                    <option value="Música">Música</option>
+                                    <option value="Comunicación Social">
+                                        Comunicación Social
+                                    </option>
+                                    <option value="Licenciatura en Educación Infantil">
+                                        Licenciatura en Educación Infantil
+                                    </option>
+                                    <option value="Literatura (virtual)">
+                                        Literatura (virtual)
+                                    </option>
+                                </optgroup>
+                            </select>
                     </div>
                     <button type="submit" class="btn-orange">Registrarse</button>
                 </form>
