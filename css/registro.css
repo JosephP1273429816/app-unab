@@ -1,209 +1,234 @@
 /* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
 /* Utilizamos la fuente Roboto para todo el texto */
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: url('fondo.png');
-  /* Imagen de fondo vertical */
-  background-size: cover;
-  /* Ajuste para cubrir toda la pantalla */
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  /* Ocultar el desplazamiento horizontal */
-  height: 100vh;
-  /* Altura igual al 100% de la altura de la ventana */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('fondo.png');
+    /* Imagen de fondo vertical */
+    background-size: cover;
+    /* Ajuste para cubrir toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Ocultar el desplazamiento horizontal */
+    height: 100vh;
+    /* Altura igual al 100% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
 .logo img {
-  max-width: 200px;
-  height: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 
 /* Media Query para dispositivos móviles */
+
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url('fondo_phone.png');
-    /* Imagen de fondo horizontal */
-  }
+    body {
+        background-image: url('fondo_phone.png');
+        /* Imagen de fondo horizontal */
+    }
 }
 
+
 /* Estilo para el contenedor principal */
+
 .container {
-  width: 90%;
-  /* Cambiamos el ancho a un porcentaje */
-  max-width: 400px;
-  padding: 30px;
-  /* Aumentamos el margen interno */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.8);
-  /* Animación de entrada suave */
-  animation-name: slideIn;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  /* Comienza con opacidad cero */
+    width: 90%;
+    /* Cambiamos el ancho a un porcentaje */
+    max-width: 400px;
+    padding: 30px;
+    /* Aumentamos el margen interno */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Animación de entrada suave */
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    /* Comienza con opacidad cero */
 }
 
 @keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
+
 /* Estilo para el encabezado centrado */
+
 header {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #registerForm select option {
-  color: #333;
-  background-color: #fff;
-  /* Fondo blanco */
-  font-family: Arial, sans-serif;
-  /* Familia de fuente */
-  font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    /* Fondo blanco */
+    font-family: Arial, sans-serif;
+    /* Familia de fuente */
+    font-size: 16px;
 }
+
 
 /* Estilo para el logotipo */
+
 img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
+
 
 /* Estilo para el título */
+
 h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }
+
 
 /* Estilo para los formularios */
+
 form {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
+
 /* Estilo para los campos de entrada y botón */
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
 button,
 .boton,
 select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  /* Animación de hover para el botón */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* Animación de hover para el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 
 /* Estilo para el botón "Registrarse" */
+
 button,
 .boton {
-  background-color: #ff9800;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
+
 
 /* Estilo para los enlaces */
+
 .register-link,
 .o_contraseña-link {
-  display: inline-block;
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-  padding: 8px 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
 
 /* Estilo para los enlaces al pasar el cursor */
+
 .register-link:hover,
 .o_contraseña-link:hover {
-  background-color: #e0e0e0;
-  /* Cambia el color al pasar el cursor */
+    background-color: #e0e0e0;
+    /* Cambia el color al pasar el cursor */
 }
+
 
 /* Estilo para los botones al pasar el cursor */
+
 button:hover {
-  background-color: #ffac5a;
-  /* Cambia el color al pasar el cursor */
-  transform: scale(1.05);
-  /* Aumenta el tamaño del botón */
+    background-color: #ffac5a;
+    /* Cambia el color al pasar el cursor */
+    transform: scale(1.05);
+    /* Aumenta el tamaño del botón */
 }
 
+
 /* Estilos para los campos ID y contraseña */
+
 .form-group.id-contrasena {
-  display: flex;
-  /* Activa flexbox dentro del grupo */
-  flex-direction: row;
-  /* Coloca los elementos en fila */
-  width: 100%;
-  /* Ocupa todo el ancho disponible */
-  margin-bottom: 15px;
-  /* Espacio entre campos */
-  gap: 10px;
-  /* Espacio entre campos de entrada */
+    display: flex;
+    /* Activa flexbox dentro del grupo */
+    flex-direction: row;
+    /* Coloca los elementos en fila */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    margin-bottom: 15px;
+    /* Espacio entre campos */
+    gap: 10px;
+    /* Espacio entre campos de entrada */
 }
 
 .form-group.id-contrasena label {
-  flex: 0 0 25%;
-  /* Ancho fijo para la etiqueta */
-  text-align: right;
-  /* Alinea la etiqueta a la derecha */
-  padding-right: 10px;
-  /* Espacio entre la etiqueta y el campo de entrada */
+    flex: 0 0 25%;
+    /* Ancho fijo para la etiqueta */
+    text-align: right;
+    /* Alinea la etiqueta a la derecha */
+    padding-right: 10px;
+    /* Espacio entre la etiqueta y el campo de entrada */
 }
 
 .form-group.id-contrasena input {
-  flex: 1;
-  /* El campo de entrada ocupa el espacio restante */
-  padding: 8px;
-  /* Espacio dentro del campo de entrada */
-  border: 1px solid #ccc;
-  /* Borde gris claro */
-  border-radius: 5px;
-  /* Esquinas redondeadas */
+    flex: 1;
+    /* El campo de entrada ocupa el espacio restante */
+    padding: 8px;
+    /* Espacio dentro del campo de entrada */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
 }
