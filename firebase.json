@@ -1,10 +1,51 @@
 {
-  "hosting": {
-    "public": "./",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+    "hosting": {
+        "public": "./",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [{
+                "source": "/bus",
+                "destination": "/html/bus.html"
+            },
+            {
+                "source": "/configuraciones",
+                "destination": "/html/configuraciones.html"
+            },
+            {
+                "source": "/contraseña",
+                "destination": "/html/contraseña.html"
+            },
+            {
+                "source": "/doom",
+                "destination": "/html/doom.html"
+            },
+            {
+                "source": "/inicio",
+                "destination": "/html/inicio.html"
+            },
+            {
+                "source": "/perfil",
+                "destination": "/html/perfil.html"
+            },
+            {
+                "source": "/pruebas",
+                "destination": "/html/pruebas.html"
+            },
+            {
+                "source": "/registro",
+                "destination": "/html/registro.html"
+            },
+            {
+                "source": "/servicios",
+                "destination": "/html/servicios.html"
+            },
+            {
+                "source": "**",
+                "destination": "/404.html"
+            }
+        ]
+    }
 }
