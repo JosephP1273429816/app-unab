@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperación - Universidad UNAB</title>
+    <link rel="preload" href="/css/login-dark.css" as="style" />
+    <link rel="preload" href="/css/login.css" as="style" />
+    <link rel="stylesheet" href="css/login.css" id="mapa-css" />
+    <script src="/js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="/img/logo.png" alt="Logo Universidad UNAB" id="logo-img" />
+            </a>
+        </header>
+        <main>
+            <div class="register-form active">
+                <h2>Recuperación de la cuenta</h2>
+                <form id="resetForm">
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico" /><br />
+                    <input class="boton" type="submit" value="Enviar Correo de Restablecimiento" />
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="/js/contraseña.js"></script>
+</body>
+
+</html>
