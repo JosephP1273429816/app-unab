@@ -217,7 +217,12 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.post-content img {
+    width: auto;
+    height: 30rem;
+    object-fit: cover;
+    margin-right: 10px;
+}
 .post-footer button:hover {
     background-color: #1565C0;
 }
