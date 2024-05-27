@@ -10,7 +10,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url("fondo.png");
+    background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,8 @@ header img {
 }
 
 .credit img {
-    max-width: 100%;
+    width: 50%;
+    height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }

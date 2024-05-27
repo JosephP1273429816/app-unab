@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="/css/styles-dark.css" as="style">
-    <link rel="preload" href="/css/styles.css" as="style">
-    <link rel="stylesheet" href="/css/styles.css" id="mapa-css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/css/styles-dark.css" as="style" />
+    <link rel="preload" href="/css/styles.css" as="style" />
+    <link rel="stylesheet" href="/css/styles.css" id="mapa-css" />
     <script src="/js/galeria.js"></script>
     <title>Inicio - Universidad UNAB</title>
-</head>
+  </head>
 
-<body class="home">
+  <body class="home">
+    <canvas id="galaxyCanvas"></canvas>
     <header>
-        <a href="inicio.html" class="logo">
-            <img src="/img/logo.png" alt="Logo Universidad UNAB" id="logo-img">
-        </a>
-        <div class="menu-toggle">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav>
-            <ul class="nav-list">
-                <li>
-                    <a class="active" href="inicio.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="perfil.html">Perfil</a>
-                </li>
-                <li>
-                    <a href="bus.html">Bus</a>
-                </li>
-                <li>
-                    <a href="configuraciones.html">Ajustes</a>
-                </li>
-            </ul>
-        </nav>
+      <a href="inicio.html" class="logo">
+        <img src="/img/logo.png" alt="Logo Universidad UNAB" id="logo-img" />
+      </a>
+      <div class="menu-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a class="active" href="inicio.html">Inicio</a>
+          </li>
+          <li>
+            <a href="perfil.html">Perfil</a>
+          </li>
+          <li>
+            <a href="bus.html">Bus</a>
+          </li>
+          <li>
+            <a href="configuraciones.html">Ajustes</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="posts-container">
-        <div class="post">
-            <div class="post-header">
-                <img src="/img/foto_usuario.svg" alt="Perfil 1">
-                <h3>Usuario 1</h3>
-            </div>
-            <div class="post-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-                </p>
-                <img src="#" alt="Imagen 1">
-                <p>
-                    Morbi nec lacus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-                </p>
-            </div>
-            <div class="post-footer">
-                <button>Me gusta</button>
-                <button>Comentar</button>
-                <button>Compartir</button>
-            </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="/img/foto_usuario.svg" alt="Perfil 1" />
+          <h3>Usuario 1</h3>
         </div>
-        <div class="post">
-            <div class="post-header">
-                <img src="/img/foto_usuario.svg" alt="Perfil 2">
-                <h3>Usuario 2</h3>
-            </div>
-            <div class="post-content">
-                <p>
-                    Ut lobortis, urna nec cursus pellentesque, eros elit dictum ipsum, a egestas mauris urna sed lectus. Aliquam vel eros vel neque vehicula condimentum nec in sapien.
-                </p>
-                <p>
-                    Vivamus sed justo eget augue feugiat ullamcorper nec sit amet metus.
-                </p>
-            </div>
-            <div class="post-footer">
-                <button>Me gusta</button>
-                <button>Comentar</button>
-                <button>Compartir</button>
-            </div>
+        <div class="post-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero. Sed cursus ante dapibus diam.
+          </p>
+          <img src="#" alt="Imagen 1" />
+          <p>
+            Morbi nec lacus. Donec vitae sapien ut libero venenatis faucibus.
+            Nullam quis ante.
+          </p>
         </div>
-        <div class="post">
-            <div class="post-header">
-                <img src="/img/foto_usuario.svg" alt="Perfil 3">
-                <h3>Usuario 3</h3>
-            </div>
-            <div class="post-content">
-                <p>
-                    Suspendisse et bibendum turpis. In hac habitasse platea dictumst. Fusce at felis sed odio efficitur placerat.
-                </p>
-                <img src="#" alt="Imagen 3">
-            </div>
-            <div class="post-footer">
-                <button>Me gusta</button>
-                <button>Comentar</button>
-                <button>Compartir</button>
-            </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
         </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="/img/foto_usuario.svg" alt="Perfil 2" />
+          <h3>Usuario 2</h3>
+        </div>
+        <div class="post-content">
+          <p>
+            Ut lobortis, urna nec cursus pellentesque, eros elit dictum ipsum, a
+            egestas mauris urna sed lectus. Aliquam vel eros vel neque vehicula
+            condimentum nec in sapien.
+          </p>
+          <p>
+            Vivamus sed justo eget augue feugiat ullamcorper nec sit amet metus.
+          </p>
+        </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <img src="/img/foto_usuario.svg" alt="Perfil 3" />
+          <h3>Usuario 3</h3>
+        </div>
+        <div class="post-content">
+          <p>
+            Suspendisse et bibendum turpis. In hac habitasse platea dictumst.
+            Fusce at felis sed odio efficitur placerat.
+          </p>
+          <img src="#" alt="Imagen 3" />
+        </div>
+        <div class="post-footer">
+          <button>Me gusta</button>
+          <button>Comentar</button>
+          <button>Compartir</button>
+        </div>
+      </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
     <script src="/js/fire.js"></script>
     <script src="/js/inicio.js"></script>
-</body>
-
+    <script src="/js/efect.js"></script>
+  </body>
 </html>

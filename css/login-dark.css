@@ -8,7 +8,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #0c0c0c;
+    background-color: #222222;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -60,8 +60,7 @@ body {
     max-width: 400px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(19, 19, 19, 0.548);
+    background-color: #2B2B2B;
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;

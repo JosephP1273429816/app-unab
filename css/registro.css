@@ -8,7 +8,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(135deg, #8ac7d0, #f6b084, #d3d8e2);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,8 +49,7 @@ body {
     max-width: 400px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.445);
+    background-color: white;
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-timing-function: ease;
@@ -82,11 +80,11 @@ header {
 }
 
 select option {
-    background-color: rgba(100, 100, 100, 0.3);
+    background-color: rgb(255, 255, 255);
 }
 
 optgroup {
-    background-color: rgba(100, 100, 100, 0.3);
+    background-color: rgb(255, 255, 255);
 }
 
 img {

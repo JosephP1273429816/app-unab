@@ -130,7 +130,7 @@ function activarModoClaro() {
 
         function drawStars() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "#000000";
 
             for (let star of stars) {
                 ctx.globalAlpha = star.alpha;
