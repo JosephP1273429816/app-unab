@@ -195,10 +195,12 @@ nav {
 }
 
 .post-content {
+    text-align: center !important;
     padding: 10px 0;
 }
 
 .post-content p {
+    text-align:left;
     margin-bottom: 10px;
 }
 .post-content img {
