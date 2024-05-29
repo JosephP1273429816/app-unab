@@ -189,17 +189,20 @@ nav {
     margin-right: 10px;
 }
 
-.post-header h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
-
 .post-content {
+    text-align: center !important;
     padding: 10px 0;
 }
 
 .post-content p {
+    text-align:left;
     margin-bottom: 10px;
+}
+.post-content img {
+    width: auto;
+    height: 30rem;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .post-footer {
